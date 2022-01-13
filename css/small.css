@@ -24,18 +24,28 @@ footer {
 	padding: 0.75 rem;
 	max-width: 600px;
 }
+header img {
+	width: 200;
+	height: auto;
+	box-shadow: 0px 0px 10px rgb(000, 000, 000);
+}
 h1 {
-	text-shadow: 2px 3px 2px rgb(170, 180, 187);
+	text-shadow: 2px 5px 4px rgb(172, 173, 173);
+	color: rgb(34, 34, 34);
 	padding: 60px;
+	margin: 0.75rem;
 }
 h2 {
-	text-shadow: 0px 0px 20px rgb(152, 204, 224);
+	text-shadow: 0px 0px 15px rgb(94, 94, 94);
+	color: rgb(42, 43, 43);
+	margin-top: 1rem;
 }
 ul {
 	margin-left: 5%;
 }
 aside {
 	text-align: justify;
+	font-size: smaller;
 	font-style: italic;
 	margin-top: 1em;
 }
