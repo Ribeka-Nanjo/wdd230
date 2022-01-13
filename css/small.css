@@ -2,15 +2,38 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(178, 202, 216);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	line-height: 2;
 }
-img {
+
+header,
+nav,
+main,
+footer {
+	margin: 0 auto;
+	padding: 0.75 rem;
+	max-width: 600px;
+}
+h1 {
+	text-shadow: 2px 3px 2px rgb(170, 180, 187);
+	padding: 60px;
+}
+h2 {
+	text-shadow: 0px 0px 20px rgb(152, 204, 224);
+}
+
+footer {
+	font-size: 0.7em;
+	background-color: rgb(178, 202, 216);
+	padding: 20px;
 }
