@@ -39,9 +39,10 @@ h2 {
 	text-shadow: 0px 0px 15px rgb(94, 94, 94);
 	color: rgb(42, 43, 43);
 	margin-top: 1rem;
+	margin: 0.75rem;
 }
 ul {
-	margin-left: 5%;
+	margin-left: 10%;
 }
 aside {
 	text-align: justify;
