@@ -1,0 +1,51 @@
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(178, 202, 216);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Mulish", sans-serif;
+	font-size: 16px;
+	line-height: 2;
+}
+
+header,
+nav,
+main,
+footer {
+	margin: 0 auto;
+	padding: 0.75 rem;
+	max-width: 600px;
+}
+h1 {
+	font-family: "Outfit", sans-serif;
+	padding: 60px;
+	margin: 0.75rem;
+}
+h2 {
+	font-family: "Mulish", sans-serif;
+	margin-top: 1rem;
+	margin: 0.75rem;
+}
+ul {
+	margin-left: 10%;
+}
+aside {
+	text-align: justify;
+	font-size: smaller;
+	font-style: italic;
+	margin-top: 1em;
+}
+footer {
+	font-size: 0.8em;
+	background-color: rgb(178, 202, 216);
+	padding: 1em;
+	text-align: center;
+}
