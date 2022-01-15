@@ -22,8 +22,12 @@ main section {
 	margin: 0.5rem;
 	background-color: #eee;
 	border-radius: 0.8em;
+	border: 0.5px solid #bbb;
 }
 
+section p {
+	padding: 1em;
+}
 h1 {
 	font-family: "Outfit", sans-serif;
 	padding: 20px;
@@ -42,13 +46,13 @@ h2 {
 }
 h3 {
 	text-align: center;
-	font-size: smaller;
+	font-size: medium;
 }
-.deimage {
+picture {
 	width: 100%;
 	height: auto;
 	border: 0.4px solid #bbb;
-	box-shadow: 0 0 10px #333;
+	box-shadow: 0 0 30px #333;
 }
 footer {
 	font-size: 0.8em;
