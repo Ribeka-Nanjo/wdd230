@@ -15,11 +15,11 @@
 		font-size: 1rem;
 	}
 	main {
-		grid-template-columns: 1fr;
+		flex: 1 1 auto;
 	}
 
 	main picture {
-		display: grid;
+		display: block;
 	}
 	main picture img {
 		width: 100%;
