@@ -7,8 +7,9 @@ body {
 	padding: 0;
 }
 header,
-footer {
-	margin: auto;
+footer,
+.footer2 {
+	margin: 0;
 	text-align: center;
 	padding: 1em;
 	padding-bottom: 1em;
@@ -35,7 +36,7 @@ nav ul li a {
 	text-decoration: none;
 	font-size: 0.95rem;
 }
-
+/*** body ***/
 main {
 	max-width: 767px;
 	margin: 0 auto;
@@ -51,10 +52,21 @@ main section {
 
 h1 {
 	font-family: "Outfit", sans-serif;
-
-	padding: 30px;
+	padding: 20px;
 	margin: auto;
 	align-items: center;
+}
+
+h2 {
+	font-family: "Outfit", sans-serif;
+	margin: 0;
+	padding: 0.8rem;
+	text-align: center;
+}
+h3 {
+	padding: 0rem;
+	text-align: center;
+	font-size: medium;
 }
 hr {
 	position: relative;
@@ -64,24 +76,46 @@ hr {
 	margin-bottom: 20px;
 	width: 10%;
 }
-h2 {
-	font-family: "Outfit", sans-serif;
-	margin: 0;
-	padding: 0.8rem;
-	text-align: center;
-}
 .name {
 	font-family: "Outfit", sans-serif;
 	background-color: rgb(178, 202, 216);
 	border-radius: 0.5em 0.5em 0 0;
 	margin: 0;
 }
-h3 {
-	padding: 0rem;
-	text-align: center;
-	font-size: medium;
-}
+
 .content-1 {
 	padding: 1rem;
 	text-align: center;
+}
+
+/***target audience***/
+
+.section2 {
+	max-width: 767px;
+	margin: 0 auto;
+	padding: 1em;
+	grid-template-columns: 1fr 1fr;
+	padding: 0;
+	margin: 0.5rem;
+}
+
+.content-2 {
+	padding: 2rem;
+	margin-left: 17rem;
+	margin-top: -10rem;
+}
+picture {
+	width: 30%;
+	padding: 0.5rem;
+	margin-left: 2rem;
+	margin-top: 2rem;
+	align-items: center;
+	border: 0.3px solid #bbb;
+	box-shadow: 0 0 20px #333;
+}
+.content-w {
+	color: rgb(65, 65, 65);
+	padding: 0;
+	margin: 0;
+	font-weight: bolder;
 }

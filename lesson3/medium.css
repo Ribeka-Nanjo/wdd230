@@ -17,15 +17,14 @@
 	main {
 		grid-template-columns: 1fr;
 	}
-	article:nth-child(3) {
-		grid-column: span 2;
-	}
+
 	main picture {
-		display: block;
+		display: grid;
 	}
 	main picture img {
 		width: 100%;
 		height: auto;
 		border: 1px solid #bbb;
 	}
+	/***target audience**/
 }

@@ -2,17 +2,15 @@
 	h1 {
 		font-size: 2rem;
 	}
-	nav a {
-	}
+
 	nav ul a {
-		font-size: 1.1rem;
 		display: grid;
+		font-size: 1.1rem;
 		grid-template-columns: repeat(3, 1fr);
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 1;
+		grid-template-columns: 1fr 1fr;
 	}
 }
