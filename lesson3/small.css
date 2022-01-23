@@ -66,6 +66,7 @@ h2 {
 h3 {
 	padding: 0rem;
 	text-align: center;
+	font-weight: 400;
 	font-size: medium;
 }
 hr {
@@ -119,9 +120,34 @@ picture {
 	margin: 0;
 	font-weight: bolder;
 }
-footer {
-	font-size: 0.8em;
-	background-color: rgb(178, 202, 216);
-	padding: 1em;
+
+/***color scheme***/
+.colors {
+	max-width: 767px;
 	text-align: center;
+	padding: 1em;
+	margin: 2em;
+}
+
+.colors th {
+	background-color: rgb(212, 209, 209);
+}
+.colors td {
+	width: 10%;
+	height: 5em;
+}
+.primary {
+	background-color: #090e20ff;
+}
+.secondary {
+	background-color: #1a2c60ff;
+}
+.background {
+	background-color: #f2f3f7ff;
+}
+.accent1 {
+	background-color: #d9dce8ff;
+}
+.accent2 {
+	background-color: #bfe6edff;
 }
