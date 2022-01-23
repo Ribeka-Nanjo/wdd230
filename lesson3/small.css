@@ -116,7 +116,7 @@ li:nth-child(2) {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	margin-left: 18rem;
-	margin-top: -18rem;
+	margin-top: -16rem;
 }
 
 .content-3 {
@@ -144,7 +144,7 @@ picture {
 	width: 30%;
 	padding: 0.5rem;
 	margin-left: 2rem;
-	margin-top: 2rem;
+	margin-top: 3.5rem;
 	align-items: center;
 	border: 0.3px solid #bbb;
 	box-shadow: 0 0 20px #333;
