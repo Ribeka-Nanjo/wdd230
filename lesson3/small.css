@@ -61,12 +61,11 @@ h2 {
 	font-family: "Outfit", sans-serif;
 	margin: 0;
 	padding: 0.8rem;
-	text-align: center;
 }
 h3 {
 	padding: 0rem;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: medium;
 }
 hr {
@@ -82,11 +81,24 @@ hr {
 	background-color: rgb(178, 202, 216);
 	border-radius: 0.5em 0.5em 0 0;
 	margin: 0;
+	text-align: center;
 }
 
 .content-1 {
 	padding: 1rem;
 	text-align: center;
+}
+div {
+	display: flex;
+}
+
+.logo {
+	justify-content: center;
+	list-style: none;
+	padding: 0.5em;
+}
+li:nth-child(2) {
+	margin: 0 8px;
 }
 
 /***target audience***/
@@ -95,16 +107,39 @@ hr {
 	max-width: 767px;
 	margin: 0 auto;
 	padding: 1em;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	padding: 0;
 	margin: 0.5rem;
 }
 
 .content-2 {
-	padding: 2rem;
-	margin-left: 17rem;
-	margin-top: -10rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-left: 18rem;
+	margin-top: -18rem;
 }
+
+.content-3 {
+	display: inline-block;
+	font-family: "Outfit", sans-serif;
+	text-align: left;
+	margin-left: 2em;
+	padding-top: 1em;
+}
+
+.senariolist {
+	margin-top: none;
+	margin-left: 5em;
+}
+hr.long-line {
+	position: relative;
+	border: none;
+	height: 2px;
+	background: rgb(192, 192, 192);
+	margin-bottom: 20px;
+	width: 100%;
+}
+
 picture {
 	width: 30%;
 	padding: 0.5rem;
@@ -150,4 +185,19 @@ picture {
 }
 .accent2 {
 	background-color: #bfe6edff;
+}
+
+/***typography***/
+h4 {
+	text-align: center;
+	font-size: 18;
+}
+.font1 {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+}
+.font2 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 16px;
 }
