@@ -1,0 +1,47 @@
+nav button {
+	margin: 0.2em 2vw;
+	background: transparent;
+	border: none;
+	font-size: 2rem;
+	color: #f2f3f7ff;
+}
+nav {
+	background-color: #1a2c60ff;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin: 0;
+}
+
+nav ul li a {
+	color: #f2f3f7ff;
+	display: block;
+	padding: 1rem 2vw;
+	text-decoration: whitesmoke;
+	border-top: 1px solid rgb(255, 255, 255, 0.5);
+}
+nav ul li a:hover {
+	background: rgba(217, 220, 232, 0.3);
+}
+
+nav ul {
+	display: none;
+}
+nav ul.open {
+	display: block;
+}
+#hamburgerBtn span:nth-child(1) {
+	display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+	display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+	display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+	display: block;
+}
