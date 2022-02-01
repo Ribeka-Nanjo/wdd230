@@ -1,9 +1,13 @@
+/**header container**/
+
+/** header **/
 nav button {
+	display: grid;
 	margin: 0.2em 2vw;
 	background: transparent;
 	border: none;
 	font-size: 2rem;
-	color: #f2f3f7ff;
+	color: rgb(142, 155, 206);
 }
 nav {
 	background-color: #1a2c60ff;
@@ -12,7 +16,7 @@ nav ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	margin: 0;
+	display: grid;
 }
 
 nav ul li a {
@@ -20,8 +24,10 @@ nav ul li a {
 	display: block;
 	padding: 1rem 2vw;
 	text-decoration: whitesmoke;
+	text-align: right;
 	border-top: 1px solid rgb(255, 255, 255, 0.5);
 }
+
 nav ul li a:hover {
 	background: rgba(217, 220, 232, 0.3);
 }
@@ -34,6 +40,7 @@ nav ul.open {
 }
 #hamburgerBtn span:nth-child(1) {
 	display: block;
+    
 }
 #hamburgerBtn span:nth-child(2) {
 	display: none;
@@ -44,4 +51,17 @@ nav ul.open {
 }
 #hamburgerBtn.open span:nth-child(2) {
 	display: block;
+}
+#humbuergerBtn {
+	text-align: right;
+}
+footer {
+	margin: 0 auto;
+	background-color: #1a2c60ff;
+	color: #f2f3f7ff;
+}
+
+.facebook {
+	display: grid;
+	grid-column: ;
 }
