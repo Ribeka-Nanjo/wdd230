@@ -14,7 +14,7 @@
 		/>
 		<link rel="short cut icon" href="favicon.ico" />
 		<link rel="stylesheet" href="normalize.css" />
-		<link rel="stylesheet" href="css/small.css" />
+		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
 	</head>
@@ -47,15 +47,21 @@
 			</div>
 		</header>
         <div class="date"></div>
+        <div class="banner">
+                🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
+        </div>
+       
 		<main>
             <div class="content">
-			<span class="hero"></span>
-			<span class="event"></span>
-			<span class="wheather"></span>
-			<span class="newsRelease"></span>
-			<span class="spotlight"></span>
-        </div>
-        <div class="spotlight"></div>
+			<span class="hero"><img src="images/Kotoku.jpeg"> </span>
+			<span class="event">event</span>
+			<span class="wheather">wheather</span>
+			<span class="newsRelease">newsRelease</span>
+            <section class="spotlight">
+			<span class="spotlight1">spotlight1</span>
+        <span class="spotlight2">spotlight2</span>
+    </section>
+</div>
 		</main>
 		<footer>
             <div>
@@ -73,13 +79,13 @@
             <p>+(81)4600-8001</p>
             <a href="https://goo.gl/maps/RBUV4arHj1n3KBmW8" title="kotokumap" target="_blank">&#x1F4CD;Location Map</a>
         </div><br>
-			<span class="updated"> &copy;2022 Kotoku Chamber<br>
-			Last updated: <span id="currentdate"></span>
+        <hr>
+			<span class="updated"> &copy;2022 Kotoku Chamber <br>
+                Ribeka Nanjo | WDD 230 Project<br>
+			<div id="lastModified"></div></span>
        
 		</footer>
-        <script src="js/homedate.js"></script>
-        <script src="js/scripts.js" ></script>
-        <script src="js/getDate.js"></script>
+        <script defer src="js/homeDate.js"></script>
     
 	</body>
 </html>
