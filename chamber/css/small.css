@@ -1,5 +1,31 @@
-/**header container**/
+body {
+	padding: 0;
+	margin: 0;
+}
 
+/**header**/
+header {
+	background-color: #1a2c60ff;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+.logo img {
+	width: 200px;
+	height: auto;
+}
+.social {
+	margin-right: 1.5rem;
+}
 /** header **/
 nav button {
 	display: grid;
@@ -9,9 +35,7 @@ nav button {
 	font-size: 2rem;
 	color: rgb(142, 155, 206);
 }
-nav {
-	background-color: #1a2c60ff;
-}
+
 nav ul {
 	list-style: none;
 	padding: 0;
@@ -40,7 +64,6 @@ nav ul.open {
 }
 #hamburgerBtn span:nth-child(1) {
 	display: block;
-    
 }
 #hamburgerBtn span:nth-child(2) {
 	display: none;
@@ -56,12 +79,36 @@ nav ul.open {
 	text-align: right;
 }
 footer {
-	margin: 0 auto;
+	margin: 2em auto;
+	padding: 0;
 	background-color: #1a2c60ff;
+	text-align: center;
 	color: #f2f3f7ff;
 }
-
-.facebook {
+.info {
+	font-size: 1em;
+	line-height: 0.7em;
+}
+/**content**/
+main {
 	display: grid;
-	grid-column: ;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+	margin: 10px auto;
+}
+.hero {
+	grid-column: 1;
+}
+
+/**date**/
+
+.date {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0.75rem;
+	background-color: #eee;
+	text-align: center;
+}
+.updated {
+	font-size: 0.8em;
 }

@@ -20,48 +20,45 @@
 	</head>
 	<body>
 		<header>
-			<div class="header-container">
-				<div class="header-element">
-					<nav>
-						<button id="hamburgerBtn">
-							<span>&#9776;</span><span>X</span>
-						</button>
-						<ul id="primaryNav">
-							<li><a href="discovery.html">Discovery</a></li>
-							<li><a href="directory.html">Directory</a></li>
-							<li><a href="join.html">Join</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-					<div class="logo-container">
-						<a href="index.html" title="Home"
-							><img
-								src="images/LOGO1.png"
-								alt="Kotoku chamber logo"
-								width="250"
-						/></a>
-					</div>
-				</div>
-				<div class="facebook">
-					<a href="index.html"
-						><img src="images/facebook (1).png" width="40"
-					/></a>
-				</div>
-				<div class="linkedin">
-					<a href="index.html"
-						><img src="images/linkedin.png" width="40"
-					/></a>
-				</div>
+            <nav>
+                <button id="hamburgerBtn">
+                    <span>&#9776;</span><span>X</span>
+                </button>
+                <ul id="primaryNav">
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <picture>
+                    <img src="images/LOGO1.png">
+                </picture>
+            </div>
+	
+	<div class="social">
+		<a href="https://facebook.com"><img id="f" src="images/facebook (1).png" height="40"></a>
+		<a href="https://linkedin.com"><img src="images/linkedin.png" height="40"></a>
+		
+	</div>
+					
+                   
 			</div>
 		</header>
+        <div class="date"></div>
 		<main>
+            <div class="content">
 			<span class="hero"></span>
 			<span class="event"></span>
 			<span class="wheather"></span>
 			<span class="newsRelease"></span>
 			<span class="spotlight"></span>
+        </div>
+        <div class="spotlight"></div>
 		</main>
 		<footer>
+            <div>
 			<a href="index.html" title="Home"
 				><img
 					class="logo2"
@@ -69,10 +66,20 @@
 					alt="Kotoku chamber logo"
 					width="300"
 			/></a>
-			<span> &copy;2022 Kotoku Chamber</span><br />
+        </div>
+        <div class=info>
+            <p>300 Kotoku Tokyo, Japan</p>
+            <p>info@kotokucc.org</p>
+            <p>+(81)4600-8001</p>
+            <a href="https://goo.gl/maps/RBUV4arHj1n3KBmW8" title="kotokumap" target="_blank">&#x1F4CD;Location Map</a>
+        </div><br>
+			<span class="updated"> &copy;2022 Kotoku Chamber<br>
 			Last updated: <span id="currentdate"></span>
-			<script src="js/getDate.js"></script>
-			<script src="js/scripts.js"></script>
+       
 		</footer>
+        <script src="js/homedate.js"></script>
+        <script src="js/scripts.js" ></script>
+        <script src="js/getDate.js"></script>
+    
 	</body>
 </html>
