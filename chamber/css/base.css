@@ -1,7 +1,8 @@
-body {
-	padding: 0;
-	margin: 0;
-}
+@media screen and (max-width: 480px) {
+	body {
+		padding: 0;
+		margin: 0;
+	}
 
 /**header**/
 header {
@@ -10,7 +11,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 900px;
+	
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
 }
@@ -20,7 +21,7 @@ header {
 	margin-left: 1rem;
 }
 .logo img {
-	width: 200px;
+	width: 320px;
 	height: auto;
 }
 .social {
@@ -81,6 +82,10 @@ nav ul {
 }
 nav ul.open {
 	display: block;
+    position:absolute;
+    top: 1;
+    left: 0;
+    background: #1a2c60ff;
 }
 #hamburgerBtn span:nth-child(1) {
 	display: block;
@@ -98,7 +103,7 @@ nav ul.open {
 #humbuergerBtn {
 	text-align: right;
 }
-
+}
 /** footer */
 footer {
 	font-family: "Quicksand", sans-serif;
@@ -181,4 +186,5 @@ main {
 	margin: 2em 0;
 	font-weight: bold;
 	border: solid 1px red;
+}
 }
