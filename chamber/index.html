@@ -13,79 +13,107 @@
 			rel="stylesheet"
 		/>
 		<link rel="short cut icon" href="favicon.ico" />
-		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
 	</head>
 	<body>
 		<header>
-            <nav>
-                <button id="hamburgerBtn">
-                    <span>&#9776;</span><span>X</span>
-                </button>
-                <ul id="primaryNav">
-                    <li><a href="discovery.html">Discovery</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="logo1">
-                <picture>
-                    <img src="images/Logo1.png" width="210">
-                </picture>
-            </div>
-	
-	<div class="social">
-		<a href="https://facebook.com"><img id="f" src="images/facebook (1).png" height="40"></a>
-		<a href="https://linkedin.com"><img src="images/linkedin.png" height="40"></a>
-		
-	</div>
-					
-                   
+			<nav>
+				<button id="hamburgerBtn">
+					<span>&#9776;</span><span>X</span>
+				</button>
+				<ul id="primaryNav">
+					<li><a href="discovery.html">Discovery</a></li>
+					<li><a href="directory.html">Directory</a></li>
+					<li><a href="join.html">Join</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="logo1">
+				<picture>
+					<img src="images/Logo1.png" alt="header logo" width="210" />
+				</picture>
+			</div>
+
+			<div class="social">
+				<a href="https://facebook.com"
+					><img
+						id="f"
+						src="images/facebooklogo.png"
+						alt="facebooklogo"
+						height="40"
+				/></a>
+				<a href="https://linkedin.com"
+					><img
+						src="images/linkedin.png"
+						alt="linkedinlogo"
+						height="40"
+				/></a>
 			</div>
 		</header>
-        <div class="date"></div>
-        <div class="banner">
-                🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
-        </div>
-       
+		<div class="date"></div>
+		<div id="min-banner">
+			<p id="text"></p>
+		</div>
 		<main>
-            <div class="content">
-			<span class="hero"><img src="images/Kotoku.jpeg"> </span>
-			<span class="event">event</span>
-			<span class="wheather">wheather</span>
-			<span class="newsRelease">newsRelease</span>
-            <section class="spotlight">
-			<span class="spotlight1">spotlight1</span>
-        <span class="spotlight2">spotlight2</span>
-    </section>
-</div>
+			<div class="content">
+				<div class="hero"></div>
+					<img src="images/Kotoku.jpeg" alt="hero image" />
+
+					<h1>Welcome to Kotoku</h1>
+					<button class="join-btn">Join the Chamber</button>
+				</div>
+				<div class="event">
+                    <h2>Ribbon Cutting</h2>
+                    <h3>💎The Diamon Shack</h3>
+                    <p>Join us for the gran opening of The Diamond
+                        Shack, Thursday at 1:00 p.m.
+                    </p>
+                    <span><a href="index.html">more info...</a></span>
+                </div>
+				<div class="wheather">wheather</div>
+				<div class="newsRelease">
+                    <h2>newsRelease</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus elit elit, a rutrum metus 
+                        suscipit non. Pellentesque a consequat odio. Donec at tristique nisl, non molestie odio. Aliquam maximus gravida mollis. Fusce congue, leo eget placerat tincidunt, orci quam ullamcorper mauris, ut ullamcorper sapien nisi at urna. Maecenas ac erat lorem. Vestibulum eu feugiat leo.</p>
+                </div>
+			</div>
+			<section id="spotlight">
+				<div class="spotlight1">spotlight1</div>
+				<div class="spotlight2">spotlight2</div>
+			</section>
 		</main>
 		<footer>
-            <div>
-			<a href="index.html" title="Home"
-				><img
-					class="logo2"
-					src="images/Logo2.png" width="290"
-					alt="Kotoku chamber logo"
-					width="300"
-			/></a>
-        </div>
-        <div class=info>
-            <p>300 Kotoku Tokyo, Japan</p>
-            <p>info@kotokucc.org</p>
-            <p>+(81)4600-8001</p>
-            <a href="https://goo.gl/maps/RBUV4arHj1n3KBmW8" title="kotokumap" target="_blank">&#x1F4CD;Location Map</a>
-        </div><br>
-        <hr>
-			<span class="updated"> &copy;2022 Kotoku Chamber <br>
-                Ribeka Nanjo | WDD 230 Project<br>
-			<div id="lastModified"></div></span>
-       
+			<div>
+				<a href="index.html" title="Home"
+					><img
+						class="logo2"
+						src="images/Logo2.png"
+						width="290"
+						alt="footer logo"
+				/></a>
+			</div>
+			<div class="info">
+				<p>300 Kotoku Tokyo, Japan</p>
+				<p>info@kotokucc.org</p>
+				<p>+(81)4600-8001</p>
+				<a
+					href="https://goo.gl/maps/RBUV4arHj1n3KBmW8"
+					title="kotokumap"
+					target="_blank"
+					>&#x1F4CD;Location Map</a
+				>
+			</div>
+			<br />
+			<hr />
+			<div class="updated">
+				&copy;2022 Kotoku Chamber <br />
+				Ribeka Nanjo | WDD 230 Project<br />
+				<div id="lastModified"></div>
+			</div>
 		</footer>
-        <script defer src="js/homeDate.js"></script>
-    
+		<script defer src="js/homeDate.js"></script>
 	</body>
 </html>
