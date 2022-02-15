@@ -37,7 +37,7 @@ header {
 	margin-left: 1rem;
 }
 .logo img {
-	width: 100;
+	width: 100%;
 	height: auto;
 }
 .social {
@@ -127,7 +127,7 @@ main {
 	grid-template-rows: 1fr;
 }
 .hero {
-	width: 698px;
+	width: 450px;
 	height: 300px;
 	border: solid;
 }
@@ -138,7 +138,7 @@ main {
 	background-color: #d9dce8ff;
 }
 
-.wheather {
+.weather {
 	height: 280px;
 	width: auto;
 	padding: 1em;
@@ -159,7 +159,6 @@ main {
 .spotlight1 {
 	padding: 2em;
 	margin: 1em;
-
 	background-color: #d9dce8ff;
 	border-bottom: solid 4px rgb(172, 176, 196);
 	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
@@ -167,7 +166,6 @@ main {
 .spotlight2 {
 	padding: 2em;
 	margin: 1em;
-
 	background-color: #d9dce8ff;
 	border-bottom: solid 4px rgb(172, 176, 196);
 	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
@@ -179,7 +177,9 @@ main {
 	padding: 0.5em 1em;
 	margin: 2em 0;
 	background: #f2f3f7ff;
+	text-align: center;
 }
+
 /** footer */
 footer {
 	font-family: "Quicksand", sans-serif;

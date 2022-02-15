@@ -60,11 +60,12 @@
 		</div>
 		<main>
 			<div class="content">
-				<div class="hero"></div>
-			
-
-					<h1></h1>
-				
+           <picture class="img">
+               <source media="(max-width: 200px)" srcset="images/small-chamber.jpg">
+               <source media="(max-width: 800px)" srcset="images/medium-chamber.jpg">  
+               <source media="(max-width: 1100px)" srcset="images/large-chamber.jpg">            
+               <img src="images/large-chamber.jpg" alt="heroimage">
+           </picture>
 				
 				<div class="event">
                     <h2>Ribbon Cutting</h2>
@@ -74,7 +75,10 @@
                     
                     <span><a href="index.html">more info...</a></span></p>
                 </div>
-				<div class="wheather">wheather</div>
+				<div class="weather">
+                    <h2>weather</h2>
+                    <img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day--v2.png" alt="weather icon"/>
+                </div>
 				<div class="newsRelease">
                     <h2>News Release</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus elit elit, a rutrum metus 
@@ -84,6 +88,7 @@
 			<section id="spotlight">
 				<div class="spotlight1">
                     <h2>Thankful Transport</h2>
+                    <img class="icons" src="https://img.icons8.com/ios/100/000000/truck.png" alt="truck icon"/>
                     <h3>"We get it there for you!"</h3>
                     <hr>
                     <p>hello@thankfultransport.com</p>
@@ -92,6 +97,7 @@
                 </div>
 				<div class="spotlight2">
                     <h2>Code Primera</h2>
+                    <img class="icons" src="https://img.icons8.com/ios/100/000000/school.png" alt="study icon"/>
                     <p>An after school coding instructional program</p>
                     <hr>
                     <p>contact@codeprimera.com</p>
@@ -99,6 +105,7 @@
                 </div>
                 <div class="spotlight3">
                     <h2>Build A Treefort</h2>
+                    <img class="icons" src="https://img.icons8.com/fluency-systems-regular/96/000000/tree.png" alt="tree icon"/>
                     <p>Over 1000 Plants!</p>
                     <hr>
                     <p>contact@codeprimera.com</p>

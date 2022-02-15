@@ -37,7 +37,7 @@ header {
 	margin-left: 1rem;
 }
 .logo img {
-	width: 100;
+	width: 100%;
 	height: auto;
 }
 .social {
@@ -120,15 +120,14 @@ nav ul.open {
 	text-align: right;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) {
 	/**content**/
-
 	.content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
 	.hero {
-		width: 698px;
+		width: 798px;
 		height: 300px;
 		border: solid;
 	}
@@ -190,6 +189,7 @@ nav ul.open {
 		display: grid;
 		grid-column: 1/4;
 		grid-row: 3/4;
+        text-align: center;
 	}
 	.spotlight1 {
 		padding: 2em;
@@ -219,7 +219,7 @@ nav ul.open {
 		background-color: #d9dce8ff;
 	}
 
-	.wheather {
+	.weather {
 		padding: 4em;
 		margin: 1em;
 		display: grid;
@@ -254,4 +254,4 @@ nav ul.open {
 		font-size: 5px;
 		text-align: center;
 	}
-}
+
