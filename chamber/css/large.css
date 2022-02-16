@@ -14,112 +14,119 @@ p {
 p {
 	font-weight: 400;
 }
+.content div {
+	margin: 1em;
+	padding: 1em;
+}
 
 /**header**/
-header {
-	background-color: #1a2c60ff;
-	padding: 5px 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
-	border-bottom: 1px solid #bbb;
-}
-.logo {
-	display: flex;
-	align-items: center;
-	margin-left: 1rem;
-}
-.logo img {
-	width: 100%;
-	height: auto;
-}
-.social {
-	margin-right: 1.5rem;
-}
-
-.date {
-	font-family: "Domine", serif;
-	font-weight: 600;
-	margin: 0.5rem;
-	padding: 0.75rem;
-	border: 1px solid #bbb;
-	text-align: center;
-	background-color: #eee;
-}
-#text {
-	font-family: "Domine", serif;
-	font-weight: 600;
-	margin: 0.5rem;
-	padding: 0.75rem;
-	border: 1px solid #bbb;
-	text-align: center;
-	background-color: rgb(248, 223, 240);
-}
-
-/** menu **/
-nav button {
-	display: grid;
-	margin: 0.2em 2vw;
-	background: transparent;
-	border: none;
-	font-size: 2rem;
-	color: rgb(142, 155, 206);
-}
-
-nav ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: grid;
-}
-
-nav ul li a {
-	color: #f2f3f7ff;
-	display: block;
-	padding: 1rem 2vw;
-	text-decoration: whitesmoke;
-	text-align: right;
-	border-top: 1px solid rgb(255, 255, 255, 0.5);
-}
-
-nav ul li a:hover {
-	background: rgba(217, 220, 232, 0.3);
-}
-
-nav ul {
-	display: none;
-}
-nav ul.open {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #1a2c60ff;
-}
-#hamburgerBtn span:nth-child(1) {
-	display: block;
-}
-#hamburgerBtn span:nth-child(2) {
-	display: none;
-}
-
-#hamburgerBtn.open span:nth-child(1) {
-	display: none;
-}
-#hamburgerBtn.open span:nth-child(2) {
-	display: block;
-}
-#humbuergerBtn {
-	text-align: right;
-}
 @media screen and (min-width: 1080px) {
+	header {
+		background-color: #1a2c60ff;
+		padding: 5px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+		border-bottom: 1px solid #bbb;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		margin-left: 1rem;
+	}
+	.logo img {
+		width: 100%;
+		height: auto;
+	}
+	.social {
+		margin-right: 1.5rem;
+	}
+
+	.date {
+		font-family: "Domine", serif;
+		font-weight: 600;
+		margin: 0.5rem;
+		padding: 0.75rem;
+		border: 1px solid #bbb;
+		text-align: center;
+		background-color: #eee;
+	}
+	#text {
+		font-family: "Domine", serif;
+		font-weight: 600;
+		margin: 0.5rem;
+		padding: 0.75rem;
+		border: 1px solid #bbb;
+		text-align: center;
+		background-color: rgb(248, 223, 240);
+	}
+
+	/** menu **/
+	nav button {
+		display: grid;
+		margin: 0.2em 2vw;
+		background: transparent;
+		border: none;
+		font-size: 2rem;
+		color: rgb(142, 155, 206);
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+	}
+
+	nav ul li a {
+		color: #f2f3f7ff;
+		display: block;
+		padding: 1rem 2vw;
+		text-decoration: whitesmoke;
+		text-align: right;
+		border-top: 1px solid rgb(255, 255, 255, 0.5);
+	}
+
+	nav ul li a:hover {
+		background: rgba(217, 220, 232, 0.3);
+	}
+
+	nav ul {
+		display: none;
+	}
+	nav ul.open {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #1a2c60ff;
+	}
+	#hamburgerBtn span:nth-child(1) {
+		display: block;
+	}
+	#hamburgerBtn span:nth-child(2) {
+		display: none;
+	}
+
+	#hamburgerBtn.open span:nth-child(1) {
+		display: none;
+	}
+	#hamburgerBtn.open span:nth-child(2) {
+		display: block;
+	}
+	#humbuergerBtn {
+		text-align: right;
+	}
+
 	/**content**/
 
 	.content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, 1fr);
+		max-width: 1200px;
+		margin: 10px auto;
 	}
 	h2,
 	h3 {
@@ -139,16 +146,14 @@ nav ul.open {
 		grid-column: 1/2;
 		grid-row: 2/3;
 		background-color: #d9dce8ff;
+		text-align: center;
 	}
 
 	.hero {
 		display: grid;
 		grid-column: 2/3;
 		grid-row: 1/3;
-		margin: 1em;
-		width: 500px;
-		height: 660px;
-		border: solid;
+		border: solid #1a2c60ff;
 	}
 
 	.newsRelease {

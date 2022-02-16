@@ -19,6 +19,10 @@ h3 {
 p {
 	font-weight: 400;
 }
+.content div {
+	margin: 1em;
+	padding: 1em;
+}
 
 /**header**/
 
@@ -121,19 +125,22 @@ nav ul.open {
 }
 
 /**content**/
-main {
+.content {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
+	margin: 10px auto;
 }
+
+.content div {
+	margin: 1em;
+	padding: 1em;
+}
+
 .hero {
-	width: 450px;
-	height: 300px;
-	border: solid;
+	border: solid #1a2c60ff;
 }
 .event {
-	padding: 2em;
-	margin: 2em 0;
 	font-weight: bold;
 	background-color: #d9dce8ff;
 }
@@ -144,6 +151,7 @@ main {
 	padding: 1em;
 	margin: 0px 60px 0px;
 	background-color: #d9dce8ff;
+	text-align: center;
 }
 
 .join {
@@ -157,15 +165,11 @@ main {
 	background-color: #d9dce8ff;
 }
 .spotlight1 {
-	padding: 2em;
-	margin: 1em;
 	background-color: #d9dce8ff;
 	border-bottom: solid 4px rgb(172, 176, 196);
 	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
 }
 .spotlight2 {
-	padding: 2em;
-	margin: 1em;
 	background-color: #d9dce8ff;
 	border-bottom: solid 4px rgb(172, 176, 196);
 	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
@@ -174,8 +178,6 @@ main {
 	display: none;
 }
 #spotlight {
-	padding: 0.5em 1em;
-	margin: 2em 0;
 	background: #f2f3f7ff;
 	text-align: center;
 }

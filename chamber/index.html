@@ -61,7 +61,7 @@
 		<main>
 			<div class="content">
            <picture class="img">
-               <source media="(max-width: 200px)" srcset="images/small-chamber.jpg">
+               <source media="(min-width: 200px)" srcset="images/small-chamber.jpg">
                <source media="(max-width: 800px)" srcset="images/medium-chamber.jpg">  
                <source media="(max-width: 1100px)" srcset="images/large-chamber.jpg">            
                <img src="images/large-chamber.jpg" alt="heroimage">
@@ -77,7 +77,12 @@
                 </div>
 				<div class="weather">
                     <h2>weather</h2>
-                    <img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day--v2.png" alt="weather icon"/>
+                    <img class="icons" src="https://img.icons8.com/ios/64/000000/partly-cloudy-day--v2.png" alt="weather icon"/>
+                    <ul> 
+                        <h3>High: <span id="t"> 33</span> &#8451;</h3>
+                         <p>Wind Speed:<span id="s"> 10</span> km/h</p>
+                         <p>Wind Chill:  <span id="w"></span></p>
+                  </ul> 
                 </div>
 				<div class="newsRelease">
                     <h2>News Release</h2>
@@ -88,7 +93,7 @@
 			<section id="spotlight">
 				<div class="spotlight1">
                     <h2>Thankful Transport</h2>
-                    <img class="icons" src="https://img.icons8.com/ios/100/000000/truck.png" alt="truck icon"/>
+                    <img class="icons" src="https://img.icons8.com/ios/64/000000/truck.png" alt="truck icon"/>
                     <h3>"We get it there for you!"</h3>
                     <hr>
                     <p>hello@thankfultransport.com</p>
@@ -97,7 +102,7 @@
                 </div>
 				<div class="spotlight2">
                     <h2>Code Primera</h2>
-                    <img class="icons" src="https://img.icons8.com/ios/100/000000/school.png" alt="study icon"/>
+                    <img class="icons" src="https://img.icons8.com/ios/64/000000/school.png" alt="study icon"/>
                     <p>An after school coding instructional program</p>
                     <hr>
                     <p>contact@codeprimera.com</p>
@@ -105,7 +110,7 @@
                 </div>
                 <div class="spotlight3">
                     <h2>Build A Treefort</h2>
-                    <img class="icons" src="https://img.icons8.com/fluency-systems-regular/96/000000/tree.png" alt="tree icon"/>
+                    <img class="icons" src="https://img.icons8.com/fluency-systems-regular/64/000000/tree.png" alt="tree icon"/>
                     <p>Over 1000 Plants!</p>
                     <hr>
                     <p>contact@codeprimera.com</p>
@@ -151,5 +156,6 @@
 			</div>
 		</footer>
 		<script defer src="js/homeDate.js"></script>
+        <script src="js/windchill.js"></script>
 	</body>
 </html>
