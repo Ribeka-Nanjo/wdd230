@@ -119,7 +119,7 @@ nav ul.open {
 }
 
 /**content**/
-@media screen and (min-width: 1080px) {
+@media screen and (max-width: 1500px) {
 	.content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

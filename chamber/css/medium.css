@@ -123,7 +123,7 @@ nav ul.open {
 #humbuergerBtn {
 	text-align: right;
 }
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 820px) {
 	/**content**/
 	.content {
 		display: grid;
