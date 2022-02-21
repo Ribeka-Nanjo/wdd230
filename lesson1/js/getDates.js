@@ -45,3 +45,7 @@ const fulldate =
 	second +
 	" (JST)";
 document.getElementById("currentdate").textContent = fulldate;
+
+//year
+var today = new Date();
+document.querySelector("#year").textContent = today.getFullYear();
