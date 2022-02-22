@@ -14,13 +14,14 @@
 		/>
 		
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
+        <link rel="stylesheet" href="css/medium.css" />
+        <link rel="stylesheet" href="css/base.css" />
         <link rel="short cut icon" href="favicon.ico" />
 	</head>
 	<body>
 		<header>
+            <div class="header">
 			<nav>
 				<button id="hamburgerBtn">
 					<span>&#9776;</span><span>X</span>
@@ -37,7 +38,6 @@
 					<img src="images/Logo1.png" alt="header logo" width="210" />
 				</picture>
 			</div>
-
 			<div class="social">
 				<a href="https://facebook.com"
 					><img
@@ -53,18 +53,16 @@
 						height="40"
 				/></a>
 			</div>
-		</header>
 		<div class="date"></div>
 		<div id="min-banner">
 			<p id="text"></p>
 		</div>
+    </div>
+    </header>
 		<main>
 			<div class="content">
-           <picture class="img">
-            <source media="(min-width: 320px)" srcset="images/medium-chamber.jpg">
-               <source media="(min-width: 780px)" srcset="images/large-chamber.jpg">  
-               <source media="(min-width: 1100px)" srcset="images/small-chamber.jpg">            
-               <img src="images/medium-800.jpg" alt="heroimage">
+           <picture>          
+               <img class="heroimg" src="images/medium-800.jpg" alt="heroimage" width="460">
            </picture>
 				
 				<div class="event">
@@ -77,8 +75,7 @@
                 </div>
 				<div class="weather">
                     <h2>Weather</h2>
-                    <img class="icons" src="https://img.icons8.com/ios/64/000000/partly-cloudy-day--v2.png" alt="weather icon"/>
-                    <ul> 
+                        <p><img class="icons" src="https://img.icons8.com/ios/64/000000/partly-cloudy-day--v2.png" alt="weather icon"/></p>
                         <h3>High: <span id="t"> 33</span> &#8451;</h3>
                          <p>Wind Speed:<span id="s"> 10</span> km/h</p>
                          <p>Wind Chill:  <span id="w"></span></p>
@@ -132,7 +129,7 @@
 					><img
 						class="logo2"
 						src="images/Logo2.png"
-						width="290"
+						width="250"
 						alt="footer logo"
 				/></a>
 			</div>
@@ -141,9 +138,9 @@
 				<p>300 Kotoku Tokyo, Japan</p>
 				<p>info@kotokucc.org</p>
 				<p>+(81)4600-8001</p>
-				<a
-					href="https://goo.gl/maps/RBUV4arHj1n3KBmW8"
+				<a href="https://goo.gl/maps/RBUV4arHj1n3KBmW8"
 					title="kotokumap"
+                    class="map"
 					target="_blank"
 					>&#x1F4CD;Location Map</a
 				>
