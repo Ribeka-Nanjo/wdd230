@@ -8,9 +8,15 @@
 	--shadow: hsl(0, 0%, 50%);
 	--zebra: rgb(219, 241, 230);
 }
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(178, 202, 216);
+}
 
 table {
-	margin: 10px auto;
+	margin: 50px auto;
 	border: thin solid var(--border);
 	box-shadow: 0 0 30px var(--shadow);
 	border-collapse: collapse;
@@ -50,4 +56,11 @@ tbody tr:nth-child(odd) {
 tfoot {
 	background-color: var(--back2);
 	font-size: 12px;
+}
+
+footer {
+	font-size: 0.8em;
+	background-color: rgb(178, 202, 216);
+	padding: 1em;
+	text-align: center;
 }

@@ -66,6 +66,7 @@ aside {
 	margin-top: 1em;
 }
 footer {
+	position: absolute;
 	font-size: 0.8em;
 	background-color: rgb(178, 202, 216);
 	padding: 1em;
