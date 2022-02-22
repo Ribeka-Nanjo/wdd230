@@ -26,5 +26,5 @@ const d = new Date();
 const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate =
-	"Compiled " + monthName + " " + d.getDate() + ", " + year + " ";
+	"Compiled " + monthName + " " + d.getDate() + ", " + year + " by Ribeka";
 document.getElementById("currentdate").textContent = fulldate;
