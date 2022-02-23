@@ -16,6 +16,7 @@ header {
 }
 
 table {
+	font-family: "Ubuntu", sans-serif;
 	margin: 50px auto;
 	border: thin solid var(--border);
 	box-shadow: 0 0 30px var(--shadow);
