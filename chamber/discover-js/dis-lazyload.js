@@ -1,4 +1,3 @@
-//lazyload
 const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img) {
@@ -8,23 +7,22 @@ function preloadImage(img) {
 	}
 	img.src = src;
 }
-
-const imgOptions = {
-	threshold: 0,
-	rootMargin: "0px 0px 100px 0px",
+const imageOptions = {
+	threshold: 1,
+	rootMargin: "0px 0px -20px 0px",
 };
 
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-	entries.forEach((entry) => {
-		if (!entry.isIntersecting) {
+const imageObserver = new IntersectionObserver((items, imageObserver) => {
+	items.forEach((item) => {
+		if (!item.isIntersecting) {
 			return;
 		} else {
-			preloadImage(entry.target);
-			imgObserver.unobserve(entry.target);
+			preloadImage(item.target);
+			imageObserver.unobserve(item.target);
 		}
 	});
-}, imgOptions);
+}, imageOptions);
 
 images.forEach((image) => {
-	imgObserver.observer(image);
+	imageObserver.observe(image);
 });
