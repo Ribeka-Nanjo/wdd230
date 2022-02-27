@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="discription"
+			content="This is a chamber of commerce site to support merchants to revitalize the local people and area in Kotoku."
+		/>
+		<title>Kotoku Chamber of commerce</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Domine&family=Quicksand:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/medium.css" />
+        <link rel="stylesheet" href="css/large.css" />
+        <link rel="stylesheet" href="discover-css/large.css" />
+        <link rel="stylesheet" href="discover-css/medium.css" />
+        <link rel="stylesheet" href="discover-css/small.css" />
+        <link rel="short cut icon" href="favicon.ico" />
+        <script defer src="discover-js/dis-lazyload.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<button id="hamburgerBtn">
+					<span>&#9776;</span><span>X</span>
+				</button>
+				<ul id="primaryNav">
+					<li><a href="discover.html">Discovery</a></li>
+					<li><a href="directory.html">Directory</a></li>
+					<li><a href="join.html">Join</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="logo1">
+				<picture>
+					<a href="index.html" title="Home"
+					><img src="images/Logo1.webp" alt="header logo" width="210" />
+				</picture></a>
+			</div>
+
+			<div class="social">
+				<a href="https://facebook.com"
+					><img
+						id="f"
+						src="images/facebooklogo.png"
+						alt="facebooklogo"
+						height="40"
+				/></a>
+				<a href="https://linkedin.com"
+					><img
+						src="images/linkedin.png"
+						alt="linkedinlogo"
+						height="40"
+				/></a>
+			</div>
+		</header>
+		<main>
+            <section>
+                <form action="action_page.php" class="contact-fm">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="name" name="name" />
+                    <label for="emailadress">E-mail adress</label>
+                    <input type="text" id="emailadd" name="email-address" />
+                    <label for="emailadress">E-mail adress</label>
+                    <input type="text" id="emailadd" name="email-address" />
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      style="height:200px"
+                    ></textarea>
+                    <input type="submit" value="Send" />
+                  </form>
+			</section>
+
+		</main>
+        <footer>
+			<div>
+				<a href="index.html" title="Home"
+					><img
+						class="logo2"
+						src="images/Logo2.webp"
+						width="290"
+						alt="footer logo"
+				/></a>
+			</div>
+        </div>
+			<div class="info">
+				<p>300 Kotoku Tokyo, Japan</p>
+				<p>info@kotokucc.org</p>
+				<p>+(81)4600-8001</p>
+				<a
+					href="https://goo.gl/maps/RBUV4arHj1n3KBmW8"
+					title="kotokumap"
+					target="_blank"
+					>&#x1F4CD;Location Map</a
+				>
+            </div>
+			<div class="updated">
+                <hr />
+                <br />
+				&copy;2022 Kotoku Chamber | Ribeka Nanjo | WDD 230 Project |<br />
+				<div id="lastModified"></div>
+			</div>
+		</footer>
+		<script defer src="discover-js/daysbetween.js"></script>
+	</body>
+</html>
