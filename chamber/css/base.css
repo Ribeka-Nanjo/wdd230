@@ -19,39 +19,31 @@ h2 {
 p {
 	font-weight: 400;
 }
-.content div {
-	margin: 1em;
-	padding: 1em;
-}
 
 /**header**/
 header {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
-	max-width: 1500px;
-}
-
-.header {
-	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 1/4;
+	grid-row: 1/2;
+	align-items: center;
+	min-width: 760px;
 	background-color: #1a2c60ff;
 }
-.logo {
-	align-items: center;
-	margin-left: 1rem;
+
+.logo1 {
+	grid-column: 2/3;
 }
-.logo img {
-	width: 100%;
-	height: auto;
-}
+
 .social {
 	grid-column: 3/4;
-	margin-right: 1.5rem;
+	text-align: right;
+}
+.social img {
+	padding: 1em;
 }
 
 .date {
-	display: grid;
 	grid-column: 1/4;
 	grid-row: 2/3;
 	font-family: "Domine", serif;
@@ -67,16 +59,17 @@ header {
 	grid-column: 1/4;
 }
 #text {
+	grid-column: 1/4;
 	font-family: "Domine", serif;
 	font-weight: 600;
 	margin: 0;
 	padding: 1rem;
 	color: red;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 470px) {
 	/** menu **/
 	nav button {
-		display: grid;
+		grid-column: 1/2;
 		margin: 0.2em 2vw;
 		background: transparent;
 		border: none;
@@ -131,16 +124,16 @@ header {
 		text-align: right;
 	}
 	/**content**/
-	.content {
+	.contant {
 		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(6, auto);
+		align-items: center;
+		width: 100%;
+		height: auto;
 	}
 
 	.heroimg {
-		display: grid;
-		grid-row: 1/2;
-		margin: 1em;
+		align-items: center;
+		grid-row: 1;
 		border: solid #d9dce8ff;
 	}
 	.event {
@@ -150,15 +143,12 @@ header {
 	}
 
 	.weather {
-		display: grid;
 		grid-row: 3/4;
 		background-color: #d9dce8ff;
+		padding: 2em;
+		margin: 2em 0;
 	}
 
-	.weather ul {
-		padding: 0;
-		margin: 0;
-	}
 	.icons {
 		display: inline-block;
 		align-self: center;
@@ -169,6 +159,7 @@ header {
 	}
 
 	.newsRelease {
+		grid-column: 1/4;
 		grid-row: 4/5;
 		padding: 2em;
 		margin: 2em 0;
@@ -178,9 +169,7 @@ header {
 	#spotlight {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
 		text-align: center;
-		grid-column: 1;
 		grid-row: 5/6;
 		background: #f2f3f7ff;
 	}
@@ -201,21 +190,24 @@ header {
 		display: none;
 	}
 
-	/** footer */
+	/** footer **/
 	footer {
-		position: absolute;
-		bottom: 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		min-width: 760px;
 		font-family: "Quicksand", sans-serif;
-		margin: 1em auto;
-		padding: 1em;
 		background-color: #1a2c60ff;
 		text-align: center;
 		font-size: 19px;
 		color: #f2f3f7ff;
 	}
+	.logo2 {
+		margin: 1em auto;
+		grid-column: 1/2;
+	}
 	.info {
-		margin: 1em;
-		font-size: 0.8em;
+		grid-column: 1/2;
+		margin: 0.5em;
 		line-height: 0.7em;
 	}
 	hr {
@@ -223,6 +215,8 @@ header {
 		border: 1px inset;
 	}
 	.updated {
+		grid-column: 1/4;
+		grid-row: 3/4;
 		margin: 0;
 		padding: 0.75rem;
 		font-size: 1px;
@@ -240,5 +234,78 @@ header {
 	}
 	a.map:active {
 		color: red;
+	}
+
+	/** Form **/
+
+	.formgrid {
+		margin: 0 auto;
+		padding: 1em;
+		background-color: #bfe6edff;
+	}
+	.mb-fm,
+	.contact-fm {
+		background-color: #f2f3f7ff;
+		max-width: 300px;
+		margin: 1em auto;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	form {
+		display: grid;
+		margin: 0 auto;
+		max-width: 300px;
+		padding: 1em;
+		border-radius: 1em;
+		font-family: "Domine", serif;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	label,
+	input,
+	textarea,
+	select,
+	button {
+		padding: 0.35rem;
+		font-size: 1.1rem;
+	}
+
+	label {
+		text-align: left;
+	}
+
+	input:focus,
+	textarea:focus,
+	select:focus {
+		background-color: #bed;
+	}
+
+	button {
+		grid-column: 1/3;
+	}
+
+	input[type="submit"] {
+		color: #b09888;
+		background-color: #e3e0dd;
+		font-size: 16px;
+		font-weight: 600;
+		border-radius: 5px;
+		border: transparent;
+		padding: 7px;
+		width: 20%;
+		display: block;
+		margin: 0 0 0 auto;
+		box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+	input[type="submit"]:hover {
+		color: #262626;
+	}
+	input[type="submit"]:active {
+		transform: translateY(2px);
+		border-bottom: none;
 	}
 }

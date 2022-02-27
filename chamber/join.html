@@ -17,11 +17,7 @@
 		<link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/medium.css" />
         <link rel="stylesheet" href="css/large.css" />
-        <link rel="stylesheet" href="discover-css/large.css" />
-        <link rel="stylesheet" href="discover-css/medium.css" />
-        <link rel="stylesheet" href="discover-css/small.css" />
         <link rel="short cut icon" href="favicon.ico" />
-        <script defer src="discover-js/dis-lazyload.js"></script>
 	</head>
 	<body>
 		<header>
@@ -58,26 +54,56 @@
 						height="40"
 				/></a>
 			</div>
+            <div class="date"></div>
+            <div id="min-banner">
+                <p id="text"></p>
+            </div>
 		</header>
 		<main>
-            <section>
+            <div class="formgrid">
                 <form action="action_page.php" class="contact-fm">
                     <label for="fname">First Name</label>
-                    <input type="text" id="name" name="name" />
+                    <input type="text" id="cf" name="name" />
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="cf" name="name" />
                     <label for="emailadress">E-mail adress</label>
-                    <input type="text" id="emailadd" name="email-address" />
-                    <label for="emailadress">E-mail adress</label>
-                    <input type="text" id="emailadd" name="email-address" />
-                    <label for="message">Message</label>
+                    <input type="text" id="cf" name="email-address" />
+                    <label for="tel">Phone</label>
+                    <input type="tel" id="cf" name="phone">
+                    <hr>
+                    <label for="fname">Business name</label>
+                    <input type="text" id="cf" name="name" />
+                    <label for="message">Business description</label>
                     <textarea
                       id="message"
                       name="message"
-                      style="height:200px"
+                      style="height:100px"
                     ></textarea>
-                    <input type="submit" value="Send" />
-                  </form>
-			</section>
-
+                    </form>
+            <form action="action_page.php" class="mb-fm">
+                <div>
+                    <input type="radio" id="np" name="mb" value="npM"
+                           checked>
+                    <label for="np">NP Membership </label><p class="price">Free</p>
+                  </div>
+                  <div>
+                    <input type="radio" id="br" name="mb" value="brM"
+                           checked>
+                    <label for="br">Bronze </label><p class="price">3,000 yen</p>
+                  </div>
+                  <div>
+                    <input type="radio" id="si" name="mb" value="siM"
+                           checked>
+                    <label for="si">Silver</label> <p class="price">2,000 yen</p>
+                  </div>
+                  <div>
+                    <input type="radio" id="go" name="mb" value="goM"
+                           checked>
+                    <label for="goM">Gold</label> <p class="price">1,000 yen</p>
+                  </div>
+                 <input type="submit" value="Send" />
+                </form>
+        </div>
 		</main>
         <footer>
 			<div>
@@ -108,6 +134,7 @@
 				<div id="lastModified"></div>
 			</div>
 		</footer>
-		<script defer src="discover-js/daysbetween.js"></script>
+        <script defer src="js/homeDate.js"></script>
+        <script src="js/windchill.js"></script>
 	</body>
 </html>
