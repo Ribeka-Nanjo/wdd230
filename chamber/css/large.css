@@ -58,7 +58,8 @@ header {
 @media screen and (min-width: 1080px) {
 	/** menu **/
 	.logo1 {
-		grid-column: 1/2;
+		grid-column: 2/3;
+		margin-left: 8em;
 	}
 	nav #primaryNav {
 		grid-column: 1/4;
@@ -239,9 +240,9 @@ header {
 		text-align: center;
 		font-size: 19px;
 		color: #f2f3f7ff;
+		bottom: 0;
 	}
-
-	.info {
+	.logo2 .info {
 		font-size: 1em;
 	}
 	hr {
@@ -253,5 +254,180 @@ header {
 		padding: 0;
 		font-size: 5px;
 		text-align: center;
+	}
+
+	/*form*/
+	.formgrid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0;
+		padding: 0;
+	}
+	h3 .member-h3 {
+		display: none;
+	}
+	.member-t {
+		grid-column: 1/3;
+		text-align: center;
+		border-radius: 10px;
+		background-color: #d9dce8ff;
+		padding: 1em;
+		margin: 0;
+	}
+	.membership-t {
+		font-size: 25px;
+	}
+	.membership-m {
+		font-style: italic;
+		font-size: 18px;
+		text-align: center;
+	}
+	.memership-d {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		background-color: #bfe6edff;
+		opacity: 1;
+		padding: 4em;
+		margin: 5%;
+		border-radius: 10px;
+	}
+	.membership-text {
+		text-align: left;
+		font-size: 20px;
+		color: rgb(184, 8, 8);
+		font-weight: 600;
+	}
+
+	.membership-descript {
+		text-align: left;
+		margin-left: 2em;
+	}
+	.member-img {
+		width: 20%;
+	}
+	.form-card {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		padding: 2em;
+		margin-top: 10%;
+	}
+	.member-line {
+		display: none;
+	}
+	.member-join {
+		display: none;
+	}
+
+	.form-btn {
+		font-size: 1rem;
+		color: #090e20ff;
+		background-color: #d9dce8ff;
+		border: 2px solid transparent;
+		border-radius: 10px;
+		padding: 10px 50px;
+		margin-top: 1rem;
+		position: relative;
+	}
+
+	.form-btn:active {
+		transform: translateY(5px);
+		border-bottom: none;
+		background-color: #bfe6edff;
+	}
+
+	.form-legend {
+		padding: 1em 0 0;
+		margin: 0 0 -0.5em;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.form-element {
+		position: relative;
+		margin-top: 2.25rem;
+		margin-bottom: 2.25rem;
+	}
+
+	.form-element-hint {
+		font-size: 1rem;
+		color: #a6a6a6;
+		display: block;
+	}
+
+	.form-element-bar {
+		position: relative;
+		height: 1px;
+		background: #999;
+		display: block;
+	}
+
+	.form-element-bar::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #337ab7;
+		height: 2px;
+		display: block;
+		transform: rotateY(90deg);
+	}
+
+	.form-element-label {
+		position: absolute;
+		top: 0.75rem;
+		line-height: 1.5rem;
+		pointer-events: none;
+		padding-left: 0.125rem;
+		font-size: 1rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin: 0;
+		color: #a6a6a6;
+		transform: translateY(-50%);
+		transform-origin: left center;
+		transition: transform 0.2s ease, color 0.2s linear, opacity 0.2s linear;
+	}
+
+	.form-element-field {
+		outline: none;
+		height: 1.5rem;
+		display: block;
+		background: none;
+		padding: 0.125rem 0.125rem 0.0625rem;
+		font-size: 1rem;
+		border: 0 solid transparent;
+		line-height: 1.5;
+		width: 100%;
+		color: #333;
+		box-shadow: none;
+		opacity: 0.001;
+		transition: opacity 0.28s ease;
+	}
+
+	.form-element-field::placeholder {
+		color: #a6a6a6;
+		transform: scale(0.7);
+		transform-origin: left top;
+	}
+
+	.form-element-field:focus ~ .form-element-label {
+		color: #337ab7;
+	}
+
+	.form-element-field.-hasvalue,
+	.form-element-field:focus {
+		opacity: 10;
+	}
+
+	.form-element-field.-hasvalue ~ .form-element-label,
+	.form-element-field:focus ~ .form-element-label {
+		transform: translateY(-100%) translateY(-0.5em) translateY(-2px)
+			scale(0.9);
+	}
+
+	textarea.form-element-field {
+		height: auto;
+		min-height: 3rem;
 	}
 }
