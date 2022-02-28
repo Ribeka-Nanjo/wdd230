@@ -61,47 +61,54 @@
 		</header>
 		<main>
             <div class="formgrid">
-                <form action="action_page.php" class="contact-fm">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="cf" name="name" />
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="cf" name="name" />
-                    <label for="emailadress">E-mail adress</label>
-                    <input type="text" id="cf" name="email-address" />
-                    <label for="tel">Phone</label>
-                    <input type="tel" id="cf" name="phone">
-                    <hr>
-                    <label for="fname">Business name</label>
-                    <input type="text" id="cf" name="name" />
-                    <label for="message">Business description</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      style="height:100px"
-                    ></textarea>
-                    </form>
-            <form action="action_page.php" class="mb-fm">
-                <div>
-                    <input type="radio" id="np" name="mb" value="npM"
-                           checked>
-                    <label for="np">NP Membership </label><p class="price">Free</p>
-                  </div>
-                  <div>
-                    <input type="radio" id="br" name="mb" value="brM"
-                           checked>
-                    <label for="br">Bronze </label><p class="price">3,000 yen</p>
-                  </div>
-                  <div>
-                    <input type="radio" id="si" name="mb" value="siM"
-                           checked>
-                    <label for="si">Silver</label> <p class="price">2,000 yen</p>
-                  </div>
-                  <div>
-                    <input type="radio" id="go" name="mb" value="goM"
-                           checked>
-                    <label for="goM">Gold</label> <p class="price">1,000 yen</p>
-                  </div>
-                 <input type="submit" value="Send" />
+                <form class="form-card">
+                    <fieldset class="form-grid">
+                        <legend class="form-legend">Application form</legend>
+                      <div class="form-element form-input">
+                            <input id="name" class="form-element-field" placeholder="Please fill in your full name" type="input" required/>
+                            <div class="form-element-bar"></div>
+                            <label class="form-element-label" for="name">First/Last Name</label>
+                        </div>
+                       <div class="form-element form-input">
+                      <input id="number" class="form-element-field" placeholder="Please fill in your phone number" type="tel" required/>
+                            <div class="form-element-bar"></div>
+                            <label class="form-element-label" for="phone">Phone</label>
+                        </div>
+                    
+                        <div class="form-element form-input">
+                            <input id="mail" class="form-element-field" placeholder="Please fill in your full name" type="email" required/>
+                            <div class="form-element-bar"></div>
+                          <label class="form-element-label" for="email" >Email</label>
+                        </div>
+                        <div class="form-checkbox form-checkbox-inline">
+                           <div class="form-element form-input">
+                            <input id="business-n" class="form-element-field" placeholder="Please fill in your business position name" type="text" required/>
+                            <div class="form-element-bar"></div>
+                          <label class="form-element-label" for="email" >Business Name</label>
+                        </div>
+                        <div class="form-checkbox form-checkbox-inline">
+                           <div class="form-element form-textarea">
+                            <textarea id="business-d" class="form-element-field" placeholder="Please briefly describe your business"></textarea>
+                            <div class="form-element-bar"></div>
+                            <label class="form-element-label" for="business description">Business description</label>
+                        </div>
+                           <div class="form-element form-select">
+                            <select id="membership" class="form-element-field">
+                                <option disabled selected value="" class="form-select-placeholder"></option>
+                                <option value="np">NP membership (No Fee)</option>
+                                <option value="go">Gold (1,000 yen)</option>
+                                <option value="si">Silver (2,000 yen)</option>
+                                <option value="br">Bronze (3,000 yen)</option>
+                            </select>
+                            <div class="form-element-bar"></div>
+                            <label class="form-element-label" for="member">Select your Membership</label>
+                        </div>
+                          
+                            
+                    </fieldset>
+                    <div class="form-actions">
+                        <button class="form-btn" type="submit">Submit</button>
+                    </div>
                 </form>
         </div>
 		</main>
