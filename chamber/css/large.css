@@ -119,8 +119,8 @@ header {
 
 	.content {
 		display: grid;
-		grid-template-columns: repeat(4 20px);
-		grid-template-rows: repeat(3);
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 		margin: 1em;
 		padding: 0 4em 0 4em;
 		justify-content: center;

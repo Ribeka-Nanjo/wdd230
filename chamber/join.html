@@ -12,12 +12,12 @@
 			href="https://fonts.googleapis.com/css2?family=Domine&family=Quicksand:wght@400;600&display=swap"
 			rel="stylesheet"
 		/>
-		
+
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/base.css" />
-        <link rel="stylesheet" href="css/medium.css" />
-        <link rel="stylesheet" href="css/large.css" />
-        <link rel="short cut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<link rel="short cut icon" href="favicon.ico" />
 	</head>
 	<body>
 		<header>
@@ -33,10 +33,13 @@
 				</ul>
 			</nav>
 			<div class="logo1">
-				<picture>
-					<a href="index.html" title="Home"
-					><img src="images/Logo1.webp" alt="header logo" width="210" />
-				</picture></a>
+				<a href="index.html" title="Home"
+					><img
+						src="images/Logo1.webp"
+						alt="header logo"
+						width="210"
+					/>
+				</a>
 			</div>
 
 			<div class="social">
@@ -56,73 +59,157 @@
 			</div>
 		</header>
 		<main>
-            <div class="formgrid">
-                <h1 class="member-t">Grow your business to success.</h1>
-                <p class="member-join">Join Today!</p>
-                <hr class="member-line">
-                <form class="form-card" action="thankyou.html" method="get" target="_blank">
-                    <fieldset class="form-grid">
-                        <legend class="form-legend">Application form</legend>
-                      <div class="form-element form-input">
-                            <input id="name" class="form-element-field" placeholder="Please fill in your full name" type="text" required/>
-                            <div class="form-element-bar"></div>
-                            <label class="form-element-label" for="name">First/Last Name</label>
-                        </div>
-                       <div class="form-element form-input">
-                      <input id="number" class="form-element-field" placeholder="Please fill in your phone number" type="tel" required/>
-                            <div class="form-element-bar"></div>
-                            <label class="form-element-label" for="phone">Phone</label>
-                        </div>
-                    
-                        <div class="form-element form-input">
-                            <input id="mail" class="form-element-field" placeholder="Please fill in your e-mailaddress" type="email" required/>
-                            <div class="form-element-bar"></div>
-                          <label class="form-element-label" for="email" >Email</label>
-                        </div>
-                        <div class="form-checkbox form-checkbox-inline">
-                           <div class="form-element form-input">
-                            <input id="business-n" class="form-element-field" placeholder="Please fill in your business position name" type="text" required/>
-                            <div class="form-element-bar"></div>
-                          <label class="form-element-label" for="email" >Business Name</label>
-                        </div>
-                        <div class="form-checkbox form-checkbox-inline">
-                           <div class="form-element form-textarea">
-                            <textarea id="business-d" class="form-element-field" placeholder="Please briefly describe your business"></textarea>
-                            <div class="form-element-bar"></div>
-                            <label class="form-element-label" for="business description">Business description</label>
-                        </div>
-                           <div class="form-element form-select">
-                            <select id="membership" class="form-element-field">
-                                <option disabled selected value="" class="form-select-placeholder"></option>
-                                <option value="np">NP membership (No Fee)</option>
-                                <option value="go">Bronze (2,0000 yen)</option>
-                                <option value="si">Silver (4,0000 yen)</option>
-                                <option value="br">Gold (6,0000 yen)</option>
-                            </select>
-                            <div class="form-element-bar"></div>
-                            <label class="form-element-label" for="member">Select your Membership</label>
-                        </div>        
-                    </fieldset>
-                    <div class="form-actions">
-                        <button class="form-btn" type="submit">Submit</button>
-                    </div>
-                </form>
-                <section class="memership-d">
-                    <p><img class="member-img" src="images/membership-icon.png" alt="membership icon"></p>
-                    <h3 class="membership-t">Join Today</h3>
-                    <h4 class="membership-min">We can provide you with the vital business support you need.</h4>
-                    <p class="membership-text">&#9830; NP member</p>
-                    <p class="membership-descript"> for non profit organizations</p>
-                    <p class="membership-text">&#9830; Bronze member</p>
-                    <p class="membership-descript">  for start-ups, freelancers and sole traders who can benefit most from our services within their first crucial years of trading.</p>
-                    <p class="membership-text">&#9830; Silver member</p>
-                    <p class="membership-descript"> for the help you grow your network and widen your reach whilst accessing the full host of our services。</p>
-                    <p class="membership-text">&#9830; Gold member</p>
-                    <p class="membership-descript">provides essential services to help your business connect and grow, including more expert advice and access to cost savings.</p>
-                </section>
-        </div>
+			<div class="formgrid">
+				<h1 class="member-t">Grow your business to success.</h1>
+				<p class="member-join">Join Today!</p>
+				<hr class="member-line" />
+				<form
+					class="form-card"
+					action="thankyou.html"
+					method="get"
+					target="_blank"
+				>
+					<fieldset class="form-grid">
+						<legend class="form-legend">Application form</legend>
+						<div class="form-element form-input">
+							<input
+								id="name"
+								class="form-element-field"
+								placeholder="Please fill in your full name"
+								type="text"
+								required
+							/>
+							<div class="form-element-bar"></div>
+							<label class="form-element-label" for="name"
+								>First/Last Name</label
+							>
+						</div>
+						<div class="form-element form-input">
+							<input
+								id="number"
+								class="form-element-field"
+								placeholder="Please fill in your phone number"
+								type="tel"
+								required
+							/>
+							<div class="form-element-bar"></div>
+							<label class="form-element-label" for="number"
+								>Phone</label
+							>
+						</div>
+						<div class="form-element form-input">
+							<input
+								id="mail"
+								class="form-element-field"
+								placeholder="Please fill in your e-mailaddress"
+								type="email"
+								required
+							/>
+							<div class="form-element-bar"></div>
+							<label class="form-element-label" for="mail"
+								>Email</label
+							>
+						</div>
+						<div class="form-checkbox form-checkbox-inline">
+							<div class="form-element form-input">
+								<input
+									id="business-n"
+									class="form-element-field"
+									placeholder="Please fill in your business position name"
+									type="text"
+									required
+								/>
+								<div class="form-element-bar"></div>
+								<label
+									class="form-element-label"
+									for="business-n"
+									>Business Name</label
+								>
+							</div>
+							<div class="form-checkbox form-checkbox-inline">
+								<div class="form-element form-textarea">
+									<textarea
+										id="business-d"
+										class="form-element-field"
+										placeholder="Please briefly describe your business"
+									></textarea>
+									<div class="form-element-bar"></div>
+									<label
+										class="form-element-label"
+										for="business-d"
+										>Business description</label
+									>
+								</div>
+								<div class="form-element form-select">
+									<select
+										id="membership"
+										class="form-element-field"
+									>
+										<option value="np">
+											NP membership (No Fee)
+										</option>
+										<option value="go">
+											Bronze (2,0000 yen)
+										</option>
+										<option value="si">
+											Silver (4,0000 yen)
+										</option>
+										<option value="br">
+											Gold (6,0000 yen)
+										</option>
+									</select>
+									<div class="form-element-bar"></div>
+									<label
+										class="form-element-label"
+										for="membership"
+										>Select your Membership</label
+									>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<div class="form-actions">
+						<button class="form-btn" type="submit">Submit</button>
+					</div>
+				</form>
+				<section class="memership-d">
+					<p>
+						<img
+							class="member-img"
+							src="images/membership-icon.png"
+							alt="membership icon"
+						/>
+					</p>
+					<h3 class="membership-t">Join Today</h3>
+					<h4 class="membership-min">
+						We can provide you with the vital business support you
+						need.
+					</h4>
+					<p class="membership-text">&#9830; NP member</p>
+					<p class="membership-descript">
+						for non profit organizations
+					</p>
+					<p class="membership-text">&#9830; Bronze member</p>
+					<p class="membership-descript">
+						for start-ups, freelancers and sole traders who can
+						benefit most from our services within their first
+						crucial years of trading.
+					</p>
+					<p class="membership-text">&#9830; Silver member</p>
+					<p class="membership-descript">
+						for the help you grow your network and widen your reach
+						whilst accessing the full host of our services。
+					</p>
+					<p class="membership-text">&#9830; Gold member</p>
+					<p class="membership-descript">
+						provides essential services to help your business
+						connect and grow, including more expert advice and
+						access to cost savings.
+					</p>
+				</section>
+			</div>
 		</main>
-        <footer>
+		<footer>
 			<div>
 				<a href="index.html" title="Home"
 					><img
@@ -132,7 +219,6 @@
 						alt="footer logo"
 				/></a>
 			</div>
-        </div>
 			<div class="info">
 				<p>300 Kotoku Tokyo, Japan</p>
 				<p>info@kotokucc.org</p>
@@ -143,15 +229,15 @@
 					target="_blank"
 					>&#x1F4CD;Location Map</a
 				>
-            </div>
+			</div>
 			<div class="updated">
-                <hr />
-                <br />
+				<hr />
+				<br />
 				&copy;2022 Kotoku Chamber | Ribeka Nanjo | WDD 230 Project |<br />
 				<div id="lastModified"></div>
 			</div>
 		</footer>
-        <script defer src="js/homeDate.js"></script>
-        <script src="js/windchill.js"></script>
+		<script defer src="js/homeDate.js"></script>
+		<script src="js/windchill.js"></script>
 	</body>
 </html>
