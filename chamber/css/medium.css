@@ -334,14 +334,18 @@ header {
 		line-height: 1.5rem;
 		pointer-events: none;
 		padding-left: 0.125rem;
+		z-index: 1;
 		font-size: 1rem;
+		font-weight: normal;
+		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		margin: 0;
 		color: #a6a6a6;
 		transform: translateY(-50%);
 		transform-origin: left center;
-		transition: transform 0.2s ease, color 0.2s linear, opacity 0.2s linear;
+		transition: transform 0.28s ease, color 0.28s linear,
+			opacity 0.28s linear;
 	}
 
 	.form-element-field {
@@ -357,13 +361,23 @@ header {
 		color: #333;
 		box-shadow: none;
 		opacity: 0.001;
-		transition: opacity 0.28s ease;
+	}
+
+	input:focus,
+	textarea:focus,
+	select:focus {
+		background-color: #bfe6edff;
 	}
 
 	.form-element-field::placeholder {
 		color: #a6a6a6;
 		transform: scale(0.7);
 		transform-origin: left top;
+	}
+	input.form-element-field:not(:placeholder-shown) ~ .form-element-label,
+	textarea.form-element-field:not(:placeholder-shown) ~ .form-element-label {
+		transform: translateY(-100%) translateY(-0.5em) translateY(-2px)
+			scale(0.9);
 	}
 
 	.form-element-field:focus ~ .form-element-label {
@@ -372,13 +386,17 @@ header {
 
 	.form-element-field.-hasvalue,
 	.form-element-field:focus {
-		opacity: 10;
+		opacity: 1;
 	}
-
+	input.form-element-field:not(:placeholder-shown),
+	textarea.form-element-field:not(:placeholder-shown) {
+		opacity: 1;
+	}
 	.form-element-field.-hasvalue ~ .form-element-label,
 	.form-element-field:focus ~ .form-element-label {
 		transform: translateY(-100%) translateY(-0.5em) translateY(-2px)
 			scale(0.9);
+		pointer-events: auto;
 	}
 
 	textarea.form-element-field {

@@ -357,7 +357,7 @@ header {
 	.form-element-bar {
 		position: relative;
 		height: 1px;
-		background: #999;
+		background: red;
 		display: block;
 	}
 

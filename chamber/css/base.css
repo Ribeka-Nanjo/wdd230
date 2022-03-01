@@ -252,6 +252,7 @@ header {
 		border: 0;
 		box-shadow: 0 10px 10px -10px #bbb inset;
 	}
+
 	.form-btn {
 		font-size: 1rem;
 		color: #090e20ff;
@@ -400,10 +401,11 @@ header {
 	padding: 0.5em 1em;
 }
 
-.t-btn:active {
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);
-	border-bottom: none;
+.t-btn:active{
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        border-bottom: none;
+      }
 }
 .fas .fa-check {
 	align-items: center;
