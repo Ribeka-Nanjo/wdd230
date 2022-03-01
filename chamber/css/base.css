@@ -125,9 +125,6 @@ header {
 	}
 	/**content**/
 
-	.contant {
-	}
-
 	.heroimg {
 		align-items: center;
 		grid-row: 1;
@@ -244,7 +241,6 @@ header {
 		padding: 1em;
 		margin: 0;
 	}
-
 	.formgrid {
 		min-width: 760px;
 		margin: 0;
@@ -256,7 +252,6 @@ header {
 		border: 0;
 		box-shadow: 0 10px 10px -10px #bbb inset;
 	}
-
 	.form-btn {
 		font-size: 1rem;
 		color: #090e20ff;
@@ -380,4 +375,36 @@ header {
 	.memership-d {
 		display: none;
 	}
+}
+
+/** thank you form**/
+.t-container {
+	min-height: 100vh;
+	position: relative;
+	box-sizing: border-box;
+}
+.t-text {
+	text-align: center;
+	font-size: 40px;
+}
+
+.t-btn {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1rem;
+	color: #090e20ff;
+	background-color: #d9dce8ff;
+	border: 2px solid transparent;
+	border-bottom: solid 4px #627295;
+	border-radius: 10px;
+	padding: 0.5em 1em;
+}
+
+.t-btn:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+.fas .fa-check {
+	align-items: center;
 }
