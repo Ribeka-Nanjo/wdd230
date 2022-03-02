@@ -348,29 +348,11 @@ header {
 		margin-bottom: 2.25rem;
 	}
 
-	.form-element-hint {
-		font-size: 1rem;
-		color: #a6a6a6;
-		display: block;
-	}
-
 	.form-element-bar {
 		position: relative;
 		height: 1px;
-		background: red;
+		background: #999;
 		display: block;
-	}
-
-	.form-element-bar::after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: #337ab7;
-		height: 2px;
-		display: block;
-		transform: rotateY(90deg);
 	}
 
 	.form-element-label {
@@ -405,10 +387,21 @@ header {
 		transition: opacity 0.28s ease;
 	}
 
+	input:focus,
+	textarea:focus,
+	select:focus {
+		background-color: #bfe6edff;
+	}
+
 	.form-element-field::placeholder {
 		color: #a6a6a6;
 		transform: scale(0.7);
 		transform-origin: left top;
+	}
+	input.form-element-field:not(:placeholder-shown) ~ .form-element-label,
+	textarea.form-element-field:not(:placeholder-shown) ~ .form-element-label {
+		transform: translateY(-100%) translateY(-0.5em) translateY(-2px)
+			scale(0.9);
 	}
 
 	.form-element-field:focus ~ .form-element-label {
@@ -417,9 +410,13 @@ header {
 
 	.form-element-field.-hasvalue,
 	.form-element-field:focus {
-		opacity: 10;
+		opacity: 1;
 	}
 
+	input.form-element-field:not(:placeholder-shown),
+	textarea.form-element-field:not(:placeholder-shown) {
+		opacity: 1;
+	}
 	.form-element-field.-hasvalue ~ .form-element-label,
 	.form-element-field:focus ~ .form-element-label {
 		transform: translateY(-100%) translateY(-0.5em) translateY(-2px)
@@ -429,5 +426,23 @@ header {
 	textarea.form-element-field {
 		height: auto;
 		min-height: 3rem;
+	}
+	select.form-element-field {
+		appearance: none;
+	}
+
+	.form-select .form-element-bar::before {
+		content: "";
+		position: absolute;
+		height: 0.5em;
+		width: 0.5em;
+		border-bottom: 1px solid rgb(184, 8, 8);
+		border-right: 1px solid rgb(184, 8, 8);
+		display: block;
+		right: 0.5em;
+		bottom: 0;
+		transition: transform 0.28s ease;
+		transform: translateY(-100%) rotateX(0deg) rotate(45deg);
+		will-change: transform;
 	}
 }

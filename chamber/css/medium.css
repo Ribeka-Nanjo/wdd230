@@ -316,18 +316,6 @@ header {
 		display: block;
 	}
 
-	.form-element-bar::after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: #337ab7;
-		height: 2px;
-		display: block;
-		transform: rotateY(90deg);
-	}
-
 	.form-element-label {
 		position: absolute;
 		top: 0.75rem;
