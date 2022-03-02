@@ -290,12 +290,6 @@ header {
 		margin-bottom: 2.25rem;
 	}
 
-	.form-element-hint {
-		font-size: 1rem;
-		color: #a6a6a6;
-		display: block;
-	}
-
 	.form-element-bar {
 		position: relative;
 		height: 1px;
