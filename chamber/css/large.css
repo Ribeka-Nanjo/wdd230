@@ -115,7 +115,7 @@ header {
 		display: none;
 	}
 
-	/**content**/
+	/** Home-content **/
 
 	.content {
 		display: grid;
@@ -255,8 +255,16 @@ header {
 		font-size: 5px;
 		text-align: center;
 	}
-
-	/*form*/
+	/** discovery-page**/
+	@media screen and (max-width: 1500px) {
+		.container {
+			margin: 1rem auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+	}
+	/*Thank you-form*/
 	.formgrid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

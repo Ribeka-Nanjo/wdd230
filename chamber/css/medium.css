@@ -121,7 +121,7 @@ header {
 	#humbuergerBtn {
 		text-align: right;
 	}
-	/**content**/
+	/**Home-content**/
 	.content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -243,7 +243,16 @@ header {
 		font-size: 5px;
 		text-align: center;
 	}
-	/** Form **/
+	/** discovery-page**/
+	@media screen and (min-width: 820px) {
+		.container {
+			margin: 1rem auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+	}
+	/** Thank you-Form **/
 	.member-t {
 		grid-column: 1/2;
 		text-align: center;
