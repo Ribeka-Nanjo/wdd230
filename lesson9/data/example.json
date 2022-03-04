@@ -1,5 +1,5 @@
 {
-	"prophets": [
+	"companies": [
 		{
 			"name": "Arcas",
 			"birthdate": "(123)-455-3928",
@@ -19,8 +19,18 @@
 		{
 			"name": "Glass Moon",
 			"birthdate": "(123)-435-3028",
-			"birthplace": "https://www.glass-moon.com/"
+			"birthplace": "https://www.glass-moon.com/",
+			"order": 3,
+			"imageurl": "WDD230/image/Dash Board.webp"
 		},
+		{
+			"name": "Insurena",
+			"birthdate": "(187)-835-3428",
+			"birthplace": "https://insurena.com/",
+			"order": 4,
+			"imageurl": "WDD230/image/Insurance com.webp"
+		},
+
 		{
 			"name": "Nomos",
 			"birthdate": "(187)-835-3428",

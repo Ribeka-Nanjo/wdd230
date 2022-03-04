@@ -8,11 +8,11 @@ fetch(requestURL)
 	})
 	.then(function (jsonObject) {
 		console.table(jsonObject); // temporary checking for valid response and data parsin
-		const prophets = jsonObject["prophets"];
-		prophets.forEach(displayProphets);
+		const companies = jsonObject["companies"];
+		companies.forEach(displayCompanies);
 	});
 
-function displayProphets(prophet) {
+function displayCompanies(company) {
 	// Create elements to add to the document
 	let card = document.createElement("section");
 	let h2 = document.createElement("h2");
@@ -20,31 +20,28 @@ function displayProphets(prophet) {
 	let birthdate = document.createElement("p");
 	let birthplace = document.createElement("p");
 	let order = ``;
-	switch (prophet.order) {
+	switch (company.order) {
 		case 1:
-			order = `${prophet.order}st`;
+			order = `${company.order}st`;
 			break;
 		case 2:
-			order = `${prophet.order}nd`;
+			order = `${company.order}nd`;
 			break;
 		case 3:
-			order = `${prophet.order}rd`;
+			order = `${company.order}rd`;
 			break;
 		default:
-			order = `${prophet.order}th`;
+			order = `${company.order}th`;
 	}
 
 	// Change the textContent property of the h2 element to contain the prophet's full name
-	h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
-	birthdate.textContent = `Date of Birth:${prophet.birthdate} `;
-	birthplace.textContent = `Place of Birth:${prophet.birthplace}`;
+	h2.innerHTML = `${company.name}`;
+	birthdate.textContent = `Date of Birth:${company.birthdate} `;
+	birthplace.textContent = `Place of Birth:${company.birthplace}`;
 
 	// Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-	portrait.setAttribute("src", prophet.imageurl);
-	portrait.setAttribute(
-		"alt",
-		`Portait of ${prophet.name} ${prophet.lastname} - ${order} Latter Day President`
-	);
+	portrait.setAttribute("src", company.imageurl);
+	portrait.setAttribute("alt", `Logo of ${company.name} - ${order} image`);
 	portrait.setAttribute("loading", "lazy");
 
 	// Add/append the section(card) with the h2 element
