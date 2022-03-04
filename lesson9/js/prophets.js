@@ -1,5 +1,5 @@
 const requestURL =
-	"https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json";
+	"https://byui-cit230.github.io/lessons/lesson-09/data/example.json";
 const cards = document.querySelector(".cards");
 
 fetch(requestURL)
