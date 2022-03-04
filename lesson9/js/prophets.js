@@ -17,8 +17,23 @@ function displayProphets(prophet) {
 	let card = document.createElement("section");
 	let h2 = document.createElement("h2");
 	let portrait = document.createElement("img");
+	let order = ``;
 	let birthdate = document.createElement("p");
 	let birthplace = document.createElement("p");
+
+	switch (prophet.order) {
+		case 1:
+			order = `${prophet.order}st`;
+			break;
+		case 2:
+			order = `${prophet.order}nd`;
+			break;
+		case 3:
+			order = `${prophet.order}nd`;
+			break;
+		default:
+			order = `${prophet.order}th`;
+	}
 
 	// Change the textContent property of the h2 element to contain the prophet's full name
 	h2.textContent = `${prophet.name} ${prophet.lastname} `;
@@ -29,7 +44,7 @@ function displayProphets(prophet) {
 	portrait.setAttribute("src", prophet.imageurl);
 	portrait.setAttribute(
 		"alt",
-		"Portait of ${prophet.name} ${prophet.lastname}-${prophet.number} Latter Day President"
+		"Portait of ${prophet.name} ${prophet.lastname} - ${order} Latter Day President"
 	);
 	portrait.setAttribute("loading", "lazy");
 
