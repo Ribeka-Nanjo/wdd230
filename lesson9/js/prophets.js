@@ -17,10 +17,9 @@ function displayProphets(prophet) {
 	let card = document.createElement("section");
 	let h2 = document.createElement("h2");
 	let portrait = document.createElement("img");
-	let order = ``;
 	let birthdate = document.createElement("p");
 	let birthplace = document.createElement("p");
-
+	let order = ``;
 	switch (prophet.order) {
 		case 1:
 			order = `${prophet.order}st`;
@@ -29,14 +28,14 @@ function displayProphets(prophet) {
 			order = `${prophet.order}nd`;
 			break;
 		case 3:
-			order = `${prophet.order}nd`;
+			order = `${prophet.order}rd`;
 			break;
 		default:
 			order = `${prophet.order}th`;
 	}
 
 	// Change the textContent property of the h2 element to contain the prophet's full name
-	h2.textContent = `${prophet.name} ${prophet.lastname} `;
+	h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
 	birthdate.textContent = `Date of Birth:${prophet.birthdate} `;
 	birthplace.textContent = `Place of Birth:${prophet.birthplace}`;
 
@@ -44,15 +43,16 @@ function displayProphets(prophet) {
 	portrait.setAttribute("src", prophet.imageurl);
 	portrait.setAttribute(
 		"alt",
-		"Portait of ${prophet.name} ${prophet.lastname} - ${order} Latter Day President"
+		`Portait of ${prophet.name} ${prophet.lastname} - ${order} Latter Day President`
 	);
 	portrait.setAttribute("loading", "lazy");
 
 	// Add/append the section(card) with the h2 element
 	card.appendChild(h2);
+	card.appendChild(portrait);
 	card.appendChild(birthdate);
 	card.appendChild(birthplace);
-	card.appendChild(portrait);
+
 	// Add/append the existing HTML div with the cards class with the section(card)
 	cards.appendChild(card);
 }
