@@ -4,7 +4,7 @@
 			"name": "Arcas",
 			"birthdate": "(123)-455-3928",
 			"birthplace": "https://www.arcas.com/",
-			"death": "https://www.thousanddesigns.com/",
+			"death": "./www.thousanddesigns.com/",
 			"length": 14,
 			"order": 1,
 			"imageurl": "WDD230/image/Arcas.webp"
@@ -14,21 +14,21 @@
 			"birthdate": "(133)-454-3978",
 			"birthplace": "https://www.arcas.com/",
 			"order": 2,
-			"imageurl": "WDD230/image/Dash Board.webp"
+			"imageurl": "./image/Dash Board.webp"
 		},
 		{
 			"name": "Glass Moon",
 			"birthdate": "(123)-435-3028",
 			"birthplace": "https://www.glass-moon.com/",
 			"order": 3,
-			"imageurl": "WDD230/image/Dash Board.webp"
+			"imageurl": "./image/Dash Board.webp"
 		},
 		{
 			"name": "Insurena",
 			"birthdate": "(187)-835-3428",
 			"birthplace": "https://insurena.com/",
 			"order": 4,
-			"imageurl": "WDD230/image/Insurance com.webp"
+			"imageurl": "./image/Insurance com.webp"
 		},
 
 		{
@@ -36,56 +36,56 @@
 			"birthdate": "(187)-835-3428",
 			"birthplace": "https://nomos.com/",
 			"order": 5,
-			"imageurl": "WDD230/image/Nomos.webp"
+			"imageurl": "./image/Nomos.webp"
 		},
 		{
 			"name": "Openly",
 			"birthdate": "(187)-235-3018",
 			"birthplace": "https://openly.com/",
 			"order": 6,
-			"imageurl": "WDD230/image/openly.webp"
+			"imageurl": "./image/openly.webp"
 		},
 		{
 			"name": "Perennial",
 			"birthdate": "(197)-234-3019",
 			"birthplace": "https://perennial.com/",
 			"order": 7,
-			"imageurl": "WDD230/image/Perennial.webp"
+			"imageurl": "./image/Perennial.webp"
 		},
 		{
 			"name": "Red Rock",
 			"birthdate": "(197)-154-3000",
 			"birthplace": "https://red-rock.com/",
 			"order": 8,
-			"imageurl": "WDD230/image/Red Rock.webp"
+			"imageurl": "./image/Red Rock.webp"
 		},
 		{
 			"name": "Santosa",
 			"birthdate": "(927)-231-6019",
 			"birthplace": "https://santosa.com/",
 			"order": 9,
-			"imageurl": "WDD230/image/Santosa.webp"
+			"imageurl": "./image/Santosa.webp"
 		},
 		{
 			"name": "Shield graphic",
 			"birthdate": "(122)-934-0011",
 			"birthplace": "https://shield-graphic.com/",
 			"order": 10,
-			"imageurl": "WDD230/image/Shield graphic.webp"
+			"imageurl": "./image/Shield graphic.webp"
 		},
 		{
 			"name": "Simplysoap",
 			"birthdate": "(137)-244-1017",
 			"birthplace": "https://simplysoap.com/",
 			"order": 11,
-			"imageurl": "WDD230/image/Simplysoap.webp"
+			"imageurl": "./image/Simplysoap.webp"
 		},
 		{
 			"name": "Stone Home",
 			"birthdate": "(170)-338-1729",
 			"birthplace": "https://stone-home.com/",
 			"order": 12,
-			"imageurl": "WDD230/image/Stone Home.webp"
+			"imageurl": "./image/Stone Home.webp"
 		}
 	]
 }

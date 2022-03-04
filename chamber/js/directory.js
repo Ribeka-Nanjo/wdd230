@@ -1,5 +1,5 @@
 const requestURL =
-	"https://Ribeka-Nanjo.github.io/wdd230/lesson9/data/example.json";
+	"https://Ribeka-Nanjo.github.io/wdd230/lesson9/data/data.json";
 const cards = document.querySelector(".cards");
 
 fetch(requestURL)
