@@ -1,88 +1,208 @@
 {
 	"prophets": [
 		{
+<<<<<<< HEAD
 			"name": "Arcas",
 			"birthdate": "(123)-455-3928",
 			"birthplace": "https://www.arcas.com/",
+=======
+			"name": "Thousand designs",
+			"birthdate": "(123)-455-3928",
+			"death": "https://www.thousanddesigns.com/",
+			"length": 14,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 1,
 			"imageurl": "WDD230/image/Arcas.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Dash Board",
 			"birthdate": "(133)-454-3978",
 			"birthplace": "https://www.arcas.com/",
+=======
+			"name": "Thousand designs",
+			"birthdate": "(133)-454-3978",
+			"death": "29 August 1877",
+			"length": 30,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 2,
 			"imageurl": "WDD230/image/Dash Board.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Glass Moon",
 			"birthdate": "(123)-435-3028",
 			"birthplace": "https://www.glass-moon.com/",
+=======
+			"name": "Thousand designs",
+			"lastname": "Taylor",
+			"birthdate":"(123)-435-3028",
+			"death": "25 July 1887",
+			"length": 6,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 3,
 			"imageurl": "WDD230/image/Glass Moon.webp"
 		},
 		{
 			"name": "Wilford",
+<<<<<<< HEAD
 			"birthdate": "(103)-415-3228",
 			"birthplace": "https://wildford.com/",
+=======
+			"lastname": "Woodruff",
+			"birthdate": "(103)-415-3228",
+			"death": "02 September 1898",
+			"length": 9,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 4,
 			"imageurl": "WDD230/image/Insurance com.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Nomos",
 			"birthdate": "(187)-835-3428",
 			"birthplace": "https://nomos.com/",
+=======
+			"name": "Lorenzo",
+			"lastname": "Snow",
+			"birthdate": "(187)-835-3428",
+			"death": "19 October 1901",
+			"length": 3,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 5,
 			"imageurl": "WDD230/image/Nomos.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Openly",
 			"birthdate": "(187)-235-3018",
 			"birthplace": "https://openly.com/",
+=======
+			"name": "Joseph F.",
+			"lastname": "Smith",
+			"birthdate": "(187)-235-3018",
+			"death": "19 November 1918",
+			"length": 17,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 6,
 			"imageurl": "WDD230/image/openly.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Perennial",
 			"birthdate": "(197)-234-3019",
 			"birthplace": "https://perennial.com/",
+=======
+			"name": "Heber J.",
+			"lastname": "Grant",
+			"birthdate": "(197)-234-3019",
+			"death": "14 May 1945",
+			"length": 23,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 7,
 			"imageurl": "WDD230/image/Perennial.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Red Rock",
 			"birthdate": "(197)-154-3000",
 			"birthplace": "https://red-rock.com/",
+=======
+			"name": "George A.",
+			"lastname": "Smith",
+			"birthdate": "(197)-154-3000",
+			"death": "4 April 1951",
+			"length": 6,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 8,
 			"imageurl": "WDD230/image/Red Rock.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Santosa",
 			"birthdate": "(927)-231-6019",
 			"birthplace": "https://santosa.com/",
+=======
+			"name": "David O.",
+			"lastname": "McKay",
+			"birthdate": "(927)-231-6019",
+			"death": "18 January 1970",
+			"length": 19,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 9,
 			"imageurl": "WDD230/image/Santosa.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Shield graphic",
 			"birthdate": "(122)-934-0011",
 			"birthplace": "https://shield-graphic.com/",
+=======
+			"name": "Joseph Fielding",
+			"lastname": "Smith",
+			"birthdate": "(122)-934-0011",
+			"death": "2 July 1972",
+			"length": 1,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 10,
 			"imageurl": "WDD230/image/Shield graphic.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Simplysoap",
 			"birthdate": "(137)-244-1017",
 			"birthplace": "https://simplysoap.com/",
+=======
+			"name": "Harold B.",
+			"lastname": "Lee",
+			"birthdate": "(137)-244-1017",
+			"death": "26 December 1973",
+			"length": 1,
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 			"order": 11,
 			"imageurl": "WDD230/image/Simplysoap.webp"
 		},
 		{
+<<<<<<< HEAD
 			"name": "Stone Home",
 			"birthdate": "(170)-338-1729",
 			"birthplace": "https://stone-home.com/",
 			"order": 12,
 			"imageurl": "WDD230/image/Stone Home.webp"
+=======
+			"name": "Spencer W.",
+			"lastname": "Kimball",
+			"birthdate": "(170)-338-1729",
+			"death": "5 November 1985",
+			"length": 12,
+			"order": 12,
+			"birthplace": "Utah",
+			"numofchildren": 4,
+			"imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/spencer-w-kimball-82918-gallery.jpg"
+		},
+		{
+			"name": "Ezra Taft",
+			"lastname": "Benson",
+			"birthdate": "(017)-224-5510",
+			"death": "30 May 1994",
+			"length": 9,
+			"order": 13,
+			"birthplace": "Idaho",
+			"numofchildren": 6,
+			"imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
+		},
+		{
+			"name": "Howard W.",
+			"lastname": "Hunter",
+			"birthdate": "(237)-874-1976",
+			"death": "3 March 1995",
+			"length": 1,
+			"order": 14,
+			"birthplace": "Idaho",
+			"numofchildren": 3,
+			"imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/howard-w-hunter-82921-gallery.jpg"
+>>>>>>> 26981eb1eb74dd791b0dde27726701fe04252e24
 		}
+	
 	]
 }
