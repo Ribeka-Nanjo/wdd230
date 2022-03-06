@@ -2,90 +2,100 @@
 	"companies": [
 		{
 			"name": "Arcas",
-			"birthdate": "(123)-455-3928",
-			"birthplace": "https://www.arcas.com/",
-			"death": "./www.thousanddesigns.com/",
-			"length": 14,
+			"add": "Kotoku-kameido 12-32",
+			"tel": "(123)-455-3928",
+			"url": "https://www.arcas.com",
 			"order": 1,
-			"imageurl": "WDD230/image/Arcas.webp"
+			"imageurl": "./directory-img/Arcas.webp"
 		},
 		{
 			"name": "Dash Board",
-			"birthdate": "(133)-454-3978",
-			"birthplace": "https://www.arcas.com/",
+			"add": "Kotoku-toyosu 2-2-2",
+			"tel": "(133)-454-3978",
+			"url": "https://www.arcas.com",
 			"order": 2,
-			"imageurl": "./image/Dash Board.webp"
+			"imageurl": "./directory-img/Dash Board.webp"
 		},
 		{
 			"name": "Glass Moon",
-			"birthdate": "(123)-435-3028",
-			"birthplace": "https://www.glass-moon.com/",
+			"add": "Kotoku-Kiba 1-18",
+			"tel": "(123)-435-3028",
+			"url": "https://www.glass-moon.com",
 			"order": 3,
-			"imageurl": "./image/Dash Board.webp"
+			"imageurl": "./directory-img/Glass Moon.webp"
 		},
 		{
-			"name": "Insurena",
-			"birthdate": "(187)-835-3428",
-			"birthplace": "https://insurena.com/",
+			"name": "Insurance",
+			"add": "Kotoku-Toyosu 52-29",
+			"tel": "(187)-835-3428",
+			"url": "https://insurena.com",
 			"order": 4,
-			"imageurl": "./image/Insurance com.webp"
+			"imageurl": "./directory-img/Insurance com.webp"
 		},
 
 		{
 			"name": "Nomos",
-			"birthdate": "(187)-835-3428",
-			"birthplace": "https://nomos.com/",
+			"add": "Kotoku-Kiba 1-23",
+			"tel": "(187)-835-3428",
+			"url": "https://nomos.com",
 			"order": 5,
-			"imageurl": "./image/Nomos.webp"
+			"imageurl": "./directory-img/Nomos.webp"
 		},
 		{
 			"name": "Openly",
-			"birthdate": "(187)-235-3018",
-			"birthplace": "https://openly.com/",
+			"add": "Kotoku-kameido 17-42",
+			"tel": "(187)-235-3018",
+			"url": "https://openly.com",
 			"order": 6,
-			"imageurl": "./image/openly.webp"
+			"imageurl": "./directory-img/openly.webp"
 		},
 		{
-			"name": "Perennial",
-			"birthdate": "(197)-234-3019",
-			"birthplace": "https://perennial.com/",
+			"name": "Pernnia",
+			"add": "Kotoku-Toyosu 2-8",
+			"tel": "(197)-234-3019",
+			"url": "https://perennial.com",
 			"order": 7,
-			"imageurl": "./image/Perennial.webp"
+			"imageurl": "./directory-img/Perennial.webp"
 		},
 		{
 			"name": "Red Rock",
-			"birthdate": "(197)-154-3000",
-			"birthplace": "https://red-rock.com/",
+			"add": "Kotoku-Minamisuna 7-11",
+			"tel": "(197)-154-3000",
+			"url": "https://red-rock.com",
 			"order": 8,
-			"imageurl": "./image/Red Rock.webp"
+			"imageurl": "./directory-img/Red Rock.webp"
 		},
 		{
 			"name": "Santosa",
-			"birthdate": "(927)-231-6019",
-			"birthplace": "https://santosa.com/",
+			"add": "Kotoku-Toyocho 12-32",
+			"tel": "(927)-231-6019",
+			"url": "https://santosa.com",
 			"order": 9,
-			"imageurl": "./image/Santosa.webp"
+			"imageurl": "./directory-img/Santosa.webp"
 		},
 		{
 			"name": "Shield graphic",
-			"birthdate": "(122)-934-0011",
-			"birthplace": "https://shield-graphic.com/",
+			"add": "Kotoku-Ariake 9-38",
+			"tel": "(122)-934-0011",
+			"url": "https://shield-graphic.com",
 			"order": 10,
-			"imageurl": "./image/Shield graphic.webp"
+			"imageurl": "./directory-img/Shield graphic.webp"
 		},
 		{
-			"name": "Simplysoap",
-			"birthdate": "(137)-244-1017",
-			"birthplace": "https://simplysoap.com/",
+			"name": "Simply Soap",
+			"add": "Kotoku-Ariake 77-23",
+			"tel": "(137)-244-1017",
+			"url": "https://simplysoap.com",
 			"order": 11,
-			"imageurl": "./image/Simplysoap.webp"
+			"imageurl": "./directory-img/Simplysoap.webp"
 		},
 		{
 			"name": "Stone Home",
-			"birthdate": "(170)-338-1729",
-			"birthplace": "https://stone-home.com/",
+			"add": "Kotoku-Shinkawa 11-22",
+			"tel": "(170)-338-1729",
+			"url": "https://stone-home.com",
 			"order": 12,
-			"imageurl": "./image/Stone Home.webp"
+			"imageurl": "./directory-img/Stone Home.webp"
 		}
 	]
 }
