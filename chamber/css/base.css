@@ -448,6 +448,16 @@ header {
 }
 
 /**directory**/
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding: 2em;
+	grid-gap: 30px;
+}
+.cards section {
+	box-shadow: 5px 5px 10px #777;
+	border: none;
+}
 
 .btn-primary img {
 	height: 25px;
@@ -457,11 +467,6 @@ header {
 	border: none;
 	height: 40px;
 	border-radius: 5px;
-}
-.cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	padding: 2em;
 }
 
 .cards img {
