@@ -21,7 +21,7 @@ function displayCompanies(company) {
 	let url = document.createElement("p");
 
 	// Change the textContent property of the element to contain company name
-	add.textContent = `${company.add}`;
+    add.textContent = `${company.add}`;
 	tel.textContent = `${company.tel} `;
 	url.textContent = `${company.url}`;
 
@@ -39,3 +39,4 @@ function displayCompanies(company) {
 	// Add/append the existing HTML div with the cards class with the section(card)
 	cards.appendChild(card);
 }
+

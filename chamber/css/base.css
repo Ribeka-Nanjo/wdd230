@@ -455,6 +455,12 @@ header {
 	padding: 2em;
 }
 
+.cards img {
+	height: 90px;
+	width: auto;
+	box-shadow: 0 0 40px #777;
+}
+
 main {
 	font-size: 14px;
 	margin: 1em;
