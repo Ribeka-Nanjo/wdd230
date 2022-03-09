@@ -61,12 +61,14 @@
 		</div>
     </header>
     <main>
-        <button class="btn btn-primary">
-            <span class="icon-card"><img src="directory-img/icon.cardview.png" alt="cardview"></span>
+        <div class="btn-primary">
+        <button id="btnCard"  onclick="cardView();">
+           <img src="directory-img/icon.cardview.png" alt="cardview">
           </button>
-          <button class="btn btn-primary active">
-            <span class="icon-list"><img src="directory-img/icon.listview.png" alt="listview"></span>
+          <button id="btnList"  onclick="listView();">
+            <img src="directory-img/icon.listview.png" alt="listview">
           </button>
+        </div>
             <div class="cards"></div>
         </main>
 
@@ -76,7 +78,7 @@
 				<a href="index.html" title="Home"
 					><img
 						class="logo2"
-						src="images/Logo2.png"
+						src="images/Logo2.webp"
 						width="250"
 						alt="footer logo"
 				/></a>

@@ -16,12 +16,14 @@ function displayCompanies(company) {
 	// Create elements to add to the document
 	let card = document.createElement("section");
 	let add = document.createElement("p");
+	let name = document.createElement("h3");
 	let portrait = document.createElement("img");
 	let tel = document.createElement("p");
-	let url = document.createElement("p");
+	let url = document.createElement("a");
 
 	// Change the textContent property of the element to contain company name
-    add.textContent = `${company.add}`;
+	name.textContent = `${company.name}`;
+	add.textContent = `${company.add}`;
 	tel.textContent = `${company.tel} `;
 	url.textContent = `${company.url}`;
 
@@ -29,8 +31,10 @@ function displayCompanies(company) {
 	portrait.setAttribute("src", company.imageurl);
 	portrait.setAttribute("alt", `Logo of ${company.name}image`);
 	portrait.setAttribute("loading", "lazy");
+	url.setAttribute("href", `${company.url}`);
 
 	// Add/append the section(card) with the h2 element
+	card.appendChild(name);
 	card.appendChild(portrait);
 	card.appendChild(add);
 	card.appendChild(tel);
@@ -40,3 +44,13 @@ function displayCompanies(company) {
 	cards.appendChild(card);
 }
 
+//Card and list view
+let cardView = function () {
+	document.querySelector(".cards").classList.remove("listV");
+	document.querySelector(".cards").classList.add("cardV");
+};
+
+let listView = function () {
+	document.querySelector(".cards").classList.add("listV");
+	document.querySelector(".cards").classList.remove("cardV");
+};
