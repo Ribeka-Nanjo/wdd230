@@ -20,23 +20,6 @@ p {
 }
 
 /**header**/
-header {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column: 1/4;
-	grid-row: 1/2;
-	align-items: center;
-	min-width: 760px;
-	background-color: #1a2c60ff;
-}
-
-.social {
-	grid-column: 3/4;
-	text-align: right;
-}
-.social img {
-	padding: 1em;
-}
 
 .date {
 	grid-column: 1/4;
@@ -55,12 +38,8 @@ header {
 	padding: 0.75rem;
 	text-align: center;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1650px) {
 	/** menu **/
-	.logo1 {
-		grid-column: 2/3;
-		margin-left: 8em;
-	}
 	nav #primaryNav {
 		grid-column: 1/4;
 	}
@@ -198,31 +177,29 @@ header {
 	}
 
 	#spotlight {
+		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
-		background: #f2f3f7ff;
+		background: red;
 		grid-column: 3;
 		grid-row: 1/4;
-		text-align: center;
-		justify-content: center;
 	}
 	.spotlight1 {
-		padding: 1em;
-		margin: 1em;
+		padding: 0;
+		margin: 0;
 		background-color: #d9dce8ff;
 		border-bottom: solid 4px rgb(172, 176, 196);
 		box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
 	}
 	.spotlight2 {
 		padding: 0;
-		margin: 1em;
+		margin: 0;
 		background-color: #d9dce8ff;
 		border-bottom: solid 4px rgb(172, 176, 196);
 		box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
 	}
 	.spotlight3 {
-		display: block;
 		padding: 0;
-		margin: 1em;
+		margin: 0;
 		background-color: #d9dce8ff;
 		border-bottom: solid 4px rgb(172, 176, 196);
 		box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);

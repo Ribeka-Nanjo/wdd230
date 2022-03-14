@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="short cut icon" href="favicon.ico" />
 	</head>
+	<body>
 		<header>
 			<nav>
 				<button id="hamburgerBtn">
@@ -54,11 +55,11 @@
 						height="40"
 				/></a>
 			</div>
-		<div class="date"></div>
-		<div id="min-banner">
-			<p id="text"></p>
-		</div>
-    </header>
+			<div class="date"></div>
+			<div id="min-banner">
+				<p id="text"></p>
+			</div>
+		</header>
 		<main>
 			<div class="content">
 				<picture>
@@ -81,13 +82,13 @@
 				</div>
 				<div class="weather">
 					<h2>Weather</h2>
-                    <figure>
-                        <img src="" alt="" id="weathericon" />
-                        <figcaption></figcaption>
-                    </figure>
-                    <h3>High: <span id="current-temp"></span> °F</h3>
-                    <hr>
-					<p>Wind Speed:<span id="wind-speed"></span> mph</p>
+					<figure>
+						<img src="" alt="" id="weathericon" />
+						<figcaption></figcaption>
+					</figure>
+					<h3>High: <span id="current-temp"></span></h3>
+					<hr />
+					<p>Wind Speed:<span id="wind-speed"></span></p>
 					<p>Wind Chill: <span id="wind-chill"></span></p>
 				</div>
 				<div class="newsRelease">
@@ -179,7 +180,7 @@
 				<div id="lastModified"></div>
 			</div>
 		</footer>
-        <script defer src="./js/homeDate.js"></script>
-        <script defer src="./js/weather.js"></script>
+		<script defer src="./js/homeDate.js"></script>
+		<script defer src="./js/weather.js"></script>
 	</body>
 </html>

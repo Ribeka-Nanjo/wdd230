@@ -3,7 +3,9 @@ body {
 	color: #090e20ff;
 	padding: 0;
 	margin: 0;
+    min-width: 460px;
 }
+
 
 h2,
 h3,
@@ -47,17 +49,6 @@ p {
 	align-items: center;
 	margin: 10px auto;
 }
-section {
-	margin: 0.25rem;
-	padding: 0.35rem;
-	background-color: #eee;
-	border: 1px solid #bbb;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 10px auto;
-	width: 100%;
-}
 
 /*local Strage*/
 .visitor {
@@ -65,18 +56,8 @@ section {
 }
 
 /**header**/
-header {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column: 1/4;
-	grid-row: 1/2;
-	align-items: center;
-	min-width: 760px;
-	background-color: #1a2c60ff;
-}
-
-.logo1 {
-	grid-column: 2/3;
+img .logo1 {
+  background-color: red;
 }
 
 .social {
@@ -84,7 +65,8 @@ header {
 	text-align: right;
 }
 .social img {
-	padding: 1em;
+	padding: 0.5em;
+    max-width: 50px;
 }
 
 .date {
@@ -110,7 +92,15 @@ header {
 	padding: 1rem;
 	color: red;
 }
-@media screen and (max-width: 470px) {
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-items: center;
+    background-color: #1a2c60ff;
+}
+@media screen and (max-width: 767px) {
 	/** menu **/
 	nav button {
 		grid-column: 1/2;
@@ -168,7 +158,20 @@ header {
 		text-align: right;
 	}
 	/**content**/
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        margin: 10px auto;
 
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-row: 1;
+    }
+    
 	.heroimg {
 		align-items: center;
 		grid-row: 1;
@@ -235,26 +238,28 @@ header {
 	}
 
 	/** footer **/
+
 	footer {
 		display: grid;
 		grid-template-columns: 1fr;
-		min-width: 760px;
 		font-family: "Quicksand", sans-serif;
 		background-color: #1a2c60ff;
 		text-align: center;
 		font-size: 19px;
+        min-width: 767px
 		color: #f2f3f7ff;
-	}
+}
 	img .logo2 {
 		display: flex;
 		align-items: center;
-		margin: 1em;
+		margin-top: 1em;
 	}
 	.info {
 		grid-column: 1/3;
 		grid-row: 2/3;
 		margin: 0.5em;
 		line-height: 0.7em;
+        color:#d9dce8ff;
 	}
 	hr {
 		display: block;
@@ -510,7 +515,7 @@ main .btn-primary {
 	justify-content: center;
 }
 
-main {
+/*main {
 	font-size: 14px;
 	margin: 3em;
 	padding: 1em;

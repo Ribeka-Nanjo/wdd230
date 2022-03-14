@@ -22,16 +22,9 @@ x.onclick = toggleMenu;
 //Banner text display
 
 const named = document.getElementById("min-banner");
-
-function toggleMinBanner() {
-	named.classList.toggle("show-banner");
-	console.log("class attribute contains: ", named.className);
-}
-
 const date = new Date();
 const todaysdate = date.getDay();
 if (todaysdate == 1 || todaysdate == 2) {
-	toggleMinBanner();
 	let x = document.querySelector("#text");
 	x.innerHTML = `🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.`;
 }

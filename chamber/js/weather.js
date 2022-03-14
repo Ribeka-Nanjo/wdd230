@@ -10,15 +10,21 @@ fetch(apiURL)
 			const windchill =
 				35.74 +
 				0.6215 * currenttemp -
-				35.75 * Math.pow(wind_speed, 0.16) +
-				0.4275 * currenttemp * Math.pow(wind_speed, 0.16);
+				35.75 * Math.pow(windspeed, 0.16) +
+				0.4275 * currenttemp * Math.pow(windspeed, 0.16);
 
-			document.querySelector("#wind-chill").innerHTML = windchill;
+			document.querySelector(
+				"#wind-chill"
+			).innerHTML = `${windchill.toFixed(0)} &#8457`;
 		} else {
 			document.querySelector("#wind-chill").innerHTML = "N/A";
 		}
-		document.querySelector("#wind-speed").innerHTML = windspeed;
-		document.querySelector("#current-temp").innerHTML = currenttemp;
+		document.querySelector("#wind-speed").innerHTML = `${windspeed.toFixed(
+			0
+		)} MPH`;
+		document.querySelector(
+			"#current-temp"
+		).innerHTML = `${currenttemp.toFixed(0)} &#8457`;
 
 		const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
 		const desc = jsObject.weather[0].description;
