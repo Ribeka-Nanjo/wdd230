@@ -55,7 +55,6 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 //Banner text display
-
 const named = document.getElementById("min-banner");
 const date = new Date();
 const todaysdate = date.getDay();
