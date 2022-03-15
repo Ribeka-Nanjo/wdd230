@@ -1,4 +1,4 @@
-const apiURL = `http://api.openweathermap.org/data/2.5/weather?id=1850147&q=Tokyo&units=metric&appid=74a52b658ebc6441b78bea6998377dfd`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=1850147&q=Tokyo&units=metric&appid=74a52b658ebc6441b78bea6998377dfd`;
 fetch(apiURL)
 	.then((response) => response.json())
 	.then((jsObject) => {
