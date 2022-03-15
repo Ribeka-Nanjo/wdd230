@@ -1,5 +1,5 @@
 const apiURL =
-	"http://api.openweathermap.org/data/2.5/weather?id=1850147&q=Tokyo&units=imperial&appid=74a52b658ebc6441b78bea6998377dfd";
+	"   http://api.openweathermap.org/data/2.5/weather?id=1850147&q=Tokyo&units=metric&appid=74a52b658ebc6441b78bea6998377dfd";
 fetch(apiURL)
 	.then((response) => response.json())
 	.then((jsObject) => {
@@ -15,16 +15,16 @@ fetch(apiURL)
 
 			document.querySelector(
 				"#wind-chill"
-			).innerHTML = `${windchill.toFixed(0)} &#8457`;
+			).innerHTML = `${windchill.toFixed(0)} &#8451;`;
 		} else {
 			document.querySelector("#wind-chill").innerHTML = "N/A";
 		}
 		document.querySelector("#wind-speed").innerHTML = `${windspeed.toFixed(
-			0
-		)} MPH`;
+			1
+		)}m/s`;
 		document.querySelector(
 			"#current-temp"
-		).innerHTML = `${currenttemp.toFixed(0)} &#8457`;
+		).innerHTML = `${currenttemp.toFixed(0)} &#8451;`;
 
 		const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
 		const desc = jsObject.weather[0].description;
