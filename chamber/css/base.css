@@ -613,6 +613,7 @@ fieldset {
 
 #contact button[type="submit"] {
 	cursor: pointer;
+	border-radius: 10px;
 	width: 100%;
 	border: none;
 	border-bottom: 10px;
