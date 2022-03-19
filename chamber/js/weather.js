@@ -14,7 +14,7 @@ fetch(apiURL)
 
 			document.querySelector(
 				"#wind-chill"
-			).innerHTML = `${windchill.toFixed(0)} &#8451;`;
+			).innerHTML = `${windchill.toFixed(0)} &#8451`;
 		} else {
 			document.querySelector("#wind-chill").innerHTML = "N/A";
 		}
