@@ -65,7 +65,7 @@ p {
 		padding: 1rem 2vw;
 		text-decoration: whitesmoke;
 		text-align: center;
-		font-size: 20px;
+		font-size: 13px;
 		border-bottom: 1px solid rgb(255, 255, 255, 0.5);
 	}
 
@@ -99,11 +99,9 @@ p {
 	/** Home-content **/
 
 	main {
-		max-width: 1350px;
+		max-width: 1300px;
 		margin: 10px auto;
 		display: grid;
-		grid-template-columns: repeat(3 auto);
-		grid-template-rows: repeat(3 1fr);
 	}
 	.content {
 		display: grid;
@@ -120,7 +118,7 @@ p {
 	.event {
 		grid-column: 1;
 		grid-row: 1/2;
-		padding: 3em;
+		padding: 0 3em;
 		background-color: #d9dce8ff;
 	}
 	.weather {
@@ -130,13 +128,16 @@ p {
 	}
 
 	.heroimg {
-		display: grid;
-		grid-column: 2;
+		display: flex;
 		grid-row: 1/3;
+		align-items: stretch;
+	}
+	main .heroimg img {
+		width: 100%;
 	}
 
 	.newsRelease {
-		padding: 3em;
+		padding: 0 2em;
 		margin: 0;
 		display: grid;
 		grid-column: 2/3;
@@ -164,7 +165,6 @@ p {
 		display: grid;
 		grid-column: 1/2;
 		grid-row: 3/4;
-
 		background-color: #d9dce8ff;
 	}
 	.join-btn2 {
@@ -190,18 +190,23 @@ p {
 		grid-template-rows: repeat(3 1fr);
 		grid-column: 3;
 		grid-row: 1/4;
-		gap: 20px;
-		margin-top: 1em;
+		margin: 1em auto;
 		text-align: center;
+		width: 290px;
 	}
 	.spotlight1,
 	.spotlight2,
 	.spotlight3 {
 		display: block;
 		background-color: #d9dce8ff;
-		padding: 12px;
+		padding: 2px;
 		margin: 5px;
-		width: 300px;
+	}
+	#spotlight h2 {
+		font-size: 18px;
+	}
+	.icons {
+		width: 30px;
 	}
 
 	/** footer */
@@ -209,11 +214,12 @@ p {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		min-width: 760px;
-		font-family: "Quicksand", sans-serif;
+		margin: 0;
+		padding: 0;
 		background-color: #1a2c60ff;
 		text-align: center;
-		padding: 1em;
-		font-size: 24px;
+		padding: 0.5em;
+		font-size: 19px;
 		color: #f2f3f7ff;
 		bottom: 0;
 	}
@@ -223,7 +229,7 @@ p {
 	div.info {
 		margin: 0;
 		padding: 0;
-		width: 320px;
+		width: 220px;
 	}
 	.logo2 {
 		grid-column: 1;
@@ -458,15 +464,6 @@ p {
 	.contact-info {
 		grid-column: 2/3;
 		padding: 0;
-	}
-	.container {
-		max-width: 989px;
-		width: 100%;
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-		gap: 0.5em;
 	}
 	#contact {
 		padding: 40px;
