@@ -475,7 +475,7 @@ p {
 		overflow: hidden;
 		padding-bottom: 53%;
 		position: relative;
-		margin: 85px 59px 0px 43px;
+		margin: 100px 0px 0px 100px;
 		grid-column: 2/3;
 		grid-row: 2/3;
 	}

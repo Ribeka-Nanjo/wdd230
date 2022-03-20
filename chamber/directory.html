@@ -19,11 +19,11 @@
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="short cut icon" href="favicon.ico" />
 	</head>
-    <body>
+	<body>
 		<header>
 			<nav>
 				<button id="hamburgerBtn">
-					<span>&#9776;</span><span>&#x2715</span>
+					<span>&#9776;</span><span>&#x2715;</span>
 				</button>
 				<ul id="primaryNav">
 					<li><a href="discover.html">Discovery</a></li>
@@ -32,15 +32,11 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
-			<picture class="logo1">
-				<a href="index.html" title="Home"
-					><img
-					src="images/Logo1.png"
-					alt="header logo"
-					width="310"
-				/>
-                </a>
-			</picture>
+			<a href="index.html" title="Home"
+				><picture class="logo1"
+					><img src="images/Logo1.png" alt="header logo" width="310"
+				/></picture>
+			</a>
 			<div class="social">
 				<a href="https://facebook.com"
 					><img
@@ -56,24 +52,22 @@
 						height="40"
 				/></a>
 			</div>
-		<div class="date"></div>
-		<div id="min-banner">
-			<p id="text"></p>
-		</div>
-    </header>
-    <main>
-        <div class="btn-primary">
-        <button id="btnCard"  onclick="cardView();">
-           <img src="directory-img/icon.cardview.png" alt="cardview">
-          </button>
-          <button id="btnList"  onclick="listView();">
-            <img src="directory-img/icon.listview.png" alt="listview">
-          </button>
-        </div>
-            <div class="cards"></div>
-        </main>
-
-</body>
+			<div class="date"></div>
+			<div id="min-banner">
+				<p id="text"></p>
+			</div>
+		</header>
+		<main>
+			<div class="btn-primary">
+				<button id="btnCard" onclick="cardView();">
+					<img src="directory-img/icon.cardview.png" alt="cardview" />
+				</button>
+				<button id="btnList" onclick="listView();">
+					<img src="directory-img/icon.listview.png" alt="listview" />
+				</button>
+			</div>
+			<div class="cards"></div>
+		</main>
 		<footer>
 			<div>
 				<a href="index.html" title="Home"
@@ -103,7 +97,6 @@
 				<div id="lastModified"></div>
 			</div>
 		</footer>
-		<script defer src="js/homeDate.js"></script>
 		<script src="js/directory.js"></script>
 	</body>
 </html>
