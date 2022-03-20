@@ -577,10 +577,16 @@ main .btn-primary {
 }
 
 #contact h4 {
-	margin: 5px 0 15px;
+	margin: 23px 0 11px;
 	display: block;
-	font-size: 13px;
+	font-size: 16px;
 	text-align: center;
+	font-style: italic;
+}
+#contact hr {
+	border: 1px inset;
+	width: 100px;
+	margin-bottom: 40px;
 }
 
 fieldset {
