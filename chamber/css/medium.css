@@ -216,7 +216,7 @@ p {
 
 	/** discovery-page**/
 	@media screen and (max-width: 1080px) {
-		.container {
+		.d-container {
 			margin: 1rem auto;
 			display: grid;
 			grid-template-columns: 1fr 1fr;

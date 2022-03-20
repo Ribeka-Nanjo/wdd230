@@ -247,14 +247,14 @@ p {
 		text-align: center;
 	}
 	/** discovery-page**/
-	@media screen and (max-width: 1500px) {
-		.container {
-			margin: 1rem auto;
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr;
-		}
+	.d-container {
+		max-width: 918px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0.5em;
 	}
+
 	/*Thank you-form*/
 	.formgrid {
 		display: grid;
