@@ -163,43 +163,7 @@ main {
 }
 .temple-btn:active,
 .service-btn:active {
-	background-colo: #333;
-}
-
-main .btn-primary {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 2em;
-	padding: 1em;
-	gap: 1em;
-}
-/**directory-listV**/
-
-.cards .listV {
-	grid-template-columns: 1fr 1fr;
-	display: grid;
-	background-color: gray;
-	text-align: center;
-	font-size: 20px;
-}
-.cards.listV section {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-column: 1/5;
-	margin: 0;
-	padding: 0;
-}
-.cards.listV section:nth-child(odd) {
-	background-color: #d9dce8ff;
-}
-.cards.listV img {
-	display: none;
-}
-
-.cards h3 {
-	text-shadow: rgb(145, 215, 228) 1px 5px 10px;
-	text-transform: uppercase;
+	background-color: #333;
 }
 
 .temple {
@@ -286,15 +250,78 @@ main .btn-primary {
 }
 
 /**TEMPLE**/
+
+.t-container {
+	padding: 2em;
+}
+
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	gap: 1em;
 }
 #btnCard,
 #btnList {
 	border: none;
 	border-radius: 5px;
 	padding: 0.5em;
+}
+.cards img {
+	width: 100%;
+}
+
+.cards p {
+	text-align: left;
+}
+.cards h2 {
+	grid-column: 1;
+	grid-row: 3;
+	text-shadow: rgb(215, 215, 215) 3px 3px 1px;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 1em auto;
+}
+.cards h4 {
+	text-shadow: rgb(153, 219, 219) 3px 3px 10px;
+}
+
+.cards h4,
+.cards p {
+	grid-column: 2;
+}
+
+img {
+}
+
+main .btn-primary {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 2em;
+	padding: 1em;
+	gap: 1em;
+}
+/**Temple-listV**/
+
+.cards .listV {
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	background-color: gray;
+	text-align: center;
+	font-size: 20px;
+}
+.cards.listV section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column: 1/5;
+	margin: 0;
+	padding: 0;
+}
+.cards.listV section:nth-child(odd) {
+	background-color: #d9dce8ff;
+}
+.cards.listV img {
+	display: none;
 }
 
 /*footer*/

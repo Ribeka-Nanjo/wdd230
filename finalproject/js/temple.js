@@ -9,25 +9,25 @@ fetch(requestURL)
 	.then(function (jsonObject) {
 		console.table(jsonObject); // temporary checking for valid response and data parsin
 		const temples = jsonObject["temples"];
-		prophets.forEach(displayTemples);
+		temples.forEach(displayTemples);
 	});
 
 function displayTemples(temple) {
 	let card = document.createElement("section");
 	let name = document.createElement("h2");
-	let dedication = document.createElement("h3");
-	let rededication = document.createElement("h3");
+	let dedication = document.createElement("h4");
+	let rededication = document.createElement("h4");
 	let templeimg = document.createElement("img");
 	let services = document.createElement("p");
 	let add = document.createElement("p");
 	let tel = document.createElement("p");
 
 	name.textContent = `${temple.name}`;
-	dedication.textContent = `DEDICATION:${temple.dedication} `;
-	rededication.textContent = `REDEDICATION:${temple.rededication} `;
-	services.textContent = `SERVICES:${temple.services} `;
-	add.textContent = `ADDRESS:${temple.add}`;
-	tel.textContent = `Telephone:${temple.tel}`;
+	dedication.textContent = `DEDICATION: ${temple.dedication} `;
+	rededication.textContent = `REDEDICATION: ${temple.rededication} `;
+	services.textContent = `SERVICES: ${temple.services} `;
+	add.textContent = `ADDRESS: ${temple.add}`;
+	tel.textContent = `Telephone: ${temple.tel}`;
 
 	// Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 	templeimg.setAttribute("src", temple.imageurl);
@@ -36,7 +36,7 @@ function displayTemples(temple) {
 
 	// Add/append the section(card) with the h2 element
 	card.appendChild(templeimg);
-	card.appendChild(h2);
+	card.appendChild(name);
 	card.appendChild(dedication);
 	card.appendChild(rededication);
 	card.appendChild(add);
