@@ -15,9 +15,10 @@
 
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/small.css" />
-		<link rel="stylesheet" href="css/medium.css"/>
+		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
-		<link rel="short cut icon" href="favicon.ico" />
+		<link rel="short cut icon" href="favicon.png" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	</head>
 	<body>
 		<header>
@@ -25,7 +26,8 @@
 				<button id="hamburgerBtn">
 					<span>&#9776;</span><span>&#x2715;</span>
 				</button>
-                    <li><a href="index.html">Home</a></li>
+				<ul id="primaryNav">
+					<li><a href="index.html">Home</a></li>
 					<li><a href="temple.html">Temple</a></li>
 					<li><a href="service.html">Service</a></li>
 					<li><a href="reserve.html">Reservation</a></li>
@@ -33,89 +35,166 @@
 			</nav>
 			<div class="logo1">
 				<a href="index.html" title="Home">
-					><img
-						src="img/logo1.png"
-						alt="header logo"
-					/>
+					<img src="img/logo1.png" width="300" alt="header logo" />
 				</a>
 			</div>
-			<div class="social">
-				<a href="https://facebook.com"
-					><img src=“https://img.icons8.com/ios-filled/50/000000/facebook-new.png”/></a>
-				<a href="https://linkedin.com"
-					><img src=“https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png”/></a>
-			</div>
-			<div class="date"></div>
 			<div id="min-banner">
 				<p id="text"></p>
-			</div>
 		</header>
 		<main>
-			<section class="content">
+			<section class="h-container">
 				<picture class="heroimg">
 					<source
-						media="(max-width: 300px)"
-						srcset="images/small-300.jpg"
+						media="(max-width: 480px)"
+						srcset="img/heroimage-480.webp"
 					/>
-					<source
-						media="(max-width: 1080px)"
-						srcset="images/large-1080.jpg"
-					/>
-					<img src="images/large-1200.jpg" alt="heroimage" />
-				</picture>
-                <div class="weather">
-					<h2>Weather</h2>
-					<figure>
-						<p><img src="" alt="weathericon" id="weathericon" /></p>
-						<figcaption></figcaption>
-					</figure>
-					<h3>High: <span id="current-temp"></span></h3>
-					<hr />
-					<p>Wind Speed:<span id="wind-speed"></span></p>
-					<p>Wind Chill: <span id="wind-chill"></span></p>
-				</div>
 
-				<div class="temple">
-					<h2>TEMPLE</h2>
+					<img src="img/heroimage-1200.webp" alt="heroimage" />
+				</picture>
 				
+				<div class="weather">
+                    <section class="weather-name">
+					<h2>TOKYO, JAPAN</h2>
+                    <div class="date"></div>
+                    <p><img src="" width=100 alt="weathericon" id="weathericon" /></p>
+                    </section>
+                    <section class="weather-name2">
+                     <p>HIGH: <span id="current-temp"></span></p>
+					<p>HUMIDITY: <span id="humidity"></span></p>
+                    <p><span id="weatherdesc"></span></p>
+                </section>
+                </div>
+<div class="page-section">
+				<section class="temple">
+					<h2>TEMPLE</h2>
 					<p>
-						kfaogbnraeogjraeokrpoag
-						<span><a href="index.html">more info...</a></span>
+						kfaogbnraeogjraeokrpoag<br>
+                        kfaogbnraeogjraeokrpoag<br>
+                        kfaogbnraeogjraeokrpoag
 					</p>
-                    <button class="temple-btn">See More</button>
-				</div>
-                <div class="service">
+					<button class="temple-btn">See More</button>
+				</section>
+				<section class="service">
 					<h2>SERVICE</h2>
-					<p>
-						kfaogbnraeogjraeokrpoaggdagrma;getdgnaoigrnaoi
-					</p>
-                    <button class="service-btn">See More</button>
-				</div>
+					<p>kfaogbnraeogjraeokrpoag<br>
+                    kfaogbnraeogjraeokrpoag<br>
+                    kfaogbnraeogjraeokrpoag
+                    </p>
+					<button class="service-btn">See More</button>
+                </section>
+            </div>
 				<div class="templepicts">
 					<h2>TEMPLE INFO</h2>
+                    <ul class="slider">
+                        <li><img src="img/Tokyo_temple.webp" alt="Tokyo Japan temple">
+                            <button> <a href=""
+                                >Tokyo Temple
+                            </a></button></li>
+                        <li><img src="img/Sapporo_temple.webp" alt="Sapporo Japan temple">
+                            <button> <a href=""
+                                >Sappor Temple
+                            </a></button></li>
+                        <li><img src="img/Provo_city_center_temple.webp" alt="Provo City Center Utah temple">
+                            <button> <a href=""
+                                >Provo City Center Temple
+                            </a></button></li>
+                        <li><img src="img/Kona_Hawaii_temple.webp" alt="Kona Hawaii temple">
+                            <button> <a href=""
+                                >Kona Temple
+                            </a></button></li>
 				</div>
 			</section>
 		</main>
+		<hr />
 		<footer>
-			<a href="index.html" title="Home"
-				><img
-					class="logo2"
-					src="images/Logo2.webp"
-					width="350"
-					alt="footer logo"
-			/></a>
-
 			<div class="info">
-				<p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285327!2d-77.09772048463415!3d38.983255949483734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2zNDgwMCBNb250Z29tZXJ5IExuICMzMDAsIEJldGhlc2RhLCBNRCAyMDgxNCDjgqLjg6Hjg6rjgqvlkIjooYblm70!5e0!3m2!1sja!2sjp!4v1648279221582!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<a href="index.html" title="Home"
+					><img
+						class="logo2"
+						src="img/logo1.png"
+						width="350"
+						alt="footer logo"
+				/></a>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285327!2d-77.09772048463415!3d38.983255949483734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2zNDgwMCBNb250Z29tZXJ5IExuICMzMDAsIEJldGhlc2RhLCBNRCAyMDgxNCDjgqLjg6Hjg6rjgqvlkIjooYblm70!5e0!3m2!1sja!2sjp!4v1648279221582!5m2!1sja!2sjp"
+					width="550"
+					height="250"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+				<p>4800 Montgomery Ln #300,<br />Bethesda, MD 20814</p>
+				<p>
+					<a href="https://facebook.com"
+						><img
+							src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+							width="40"
+							alt="facebook icon"
+					/></a>
+					<a href="https://www.instagram.com/"
+						><img
+							src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png"
+							width="40"
+							alt="instagram icon"
+					/></a>
+				</p>
 			</div>
+			<form id="contact" method="post">
+				<h3>Contact form</h3>
+				<fieldset>
+					<input
+						placeholder="Name"
+						type="text"
+						tabindex="1"
+						required
+					/>
+				</fieldset>
+				<fieldset>
+					<input
+						placeholder="Phone Number"
+						type="tel"
+						tabindex="2"
+						required
+					/>
+				</fieldset>
+				<fieldset>
+					<input
+						placeholder="Email Address"
+						type="email"
+						tabindex="3"
+						required
+					/>
+				</fieldset>
+				<fieldset>
+					<textarea
+						placeholder="Type your message here...."
+						tabindex="4"
+						style="height: 200px"
+						required
+					></textarea>
+				</fieldset>
+				<fieldset>
+					<button
+						id="contact-b"
+						name="submit"
+						type="submit"
+						data-submit="...Sending"
+					>
+						Submit
+					</button>
+				</fieldset>
+			</form>
 			<div class="updated">
 				<hr />
 				<br />
-				&copy;2022 Temple Inn & Suite | Ribeka Nanjo | WDD 230 Final Project |<br />
+				&copy;2022 Temple Inn & Suite | Ribeka Nanjo | WDD 230 Final
+				Project |<br />
 				<div id="lastModified"></div>
 			</div>
 		</footer>
-		<script defer src="./js/weather.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script defer src="js/main.js"></script>
 	</body>
 </html>

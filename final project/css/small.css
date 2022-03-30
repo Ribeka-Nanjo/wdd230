@@ -5,6 +5,45 @@ body {
 	margin: 0;
 }
 
-p{
+p, h2, button{
     text-align: center;
 }
+
+@media screen and (max-width: 412px) {
+	/** menu **/
+	header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column: 1/4;
+		grid-row: 1/2;
+		align-items: center;
+		background-color: #1a2c60ff;
+	}
+	nav ul {
+		display: none;
+	}
+	nav ul {
+		list-style: none;
+		padding: 25px;
+		width: 135px;
+		height: 220px;
+	}
+
+	#hamburgerBtn span:nth-child(1) {
+		display: block;
+	}
+	#hamburgerBtn span:nth-child(2) {
+		display: none;
+	}
+
+	#hamburgerBtn.open span:nth-child(1) {
+		display: none;
+	}
+	#hamburgerBtn.open span:nth-child(2) {
+		display: block;
+	}
+	#humbuergerBtn {
+		text-align: right;
+	}
+
+    

@@ -1,0 +1,43 @@
+{
+	"temples": [
+		{
+			"name": "Tokyo Japan Temple",
+            "dedication": "27–29 October 1980 by Spencer W. Kimball",
+            "rededication": "3 July 2022 by Henry B. Eyring",
+			"add": " 5-8-10 Minami Azabu, Minato-ku,Tokyo, Japan",
+			"tel": "03-3442-8171",
+            "services":"NO clothing rental available,NO cafeteria food served, NO patron housing available, NO distribution center nearby",
+			"order": 1,
+            "imageurl": "./img/Tokyo_temple.webp"
+		},
+		{
+			"name": "Sapporo Japan Temple",
+            "dedication": "21 August 2016 by Russell M. Nelson",
+			"add": "1-6-1 Oyachi-Nishi, Atsubetsu-ku Sapporo, Hokkaido,004-0042, Japan",
+			"tel": "11-890-8120",
+            "ordinances": ,
+            "services":"NO clothing rental available,NO cafeteria food served, NO patron housing available, NO distribution center nearby",
+			"order": 2,
+			"imageurl": "./img/Sapporo_temple.webp"
+		},
+		{
+			"name": "Provo City Center Temple",
+            "dedication": "20 March 2016 by Dallin H. Oaks",
+			"add": "50 South University Ave, Provo UT 84601, United States",
+			"tel": "801-343-2700",
+            "services":"Clothing rental available, No cafeteria available, No patron housing available,Distribution center nearby",
+			"order": 3,
+			"imageurl": "./img/Provo_city_center_temple.webp"
+		},
+		{
+			"name": "Kona Hawaii Temple",
+            "dedication": "23–24 January 2000 by Gordon B. Hinckley",
+			"add": "75-230 Kalani St, Kailua-Kona HI 96740-1833, United States",
+			"tel": "808-331-8504",
+            "services":"NO clothing rental available,NO cafeteria food served, NO patron housing available, NO distribution center nearby",
+			"order": 4,
+			"imageurl": "./img/Kona_Hawaii_temple.webp"
+		}		
+	
+	]
+}
