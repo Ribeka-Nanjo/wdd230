@@ -161,8 +161,47 @@ main {
 	gap: 1em;
 	margin-top: 1em;
 }
-.service {
+.temple-btn:active,
+.service-btn:active {
+	background-colo: #333;
 }
+
+main .btn-primary {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 2em;
+	padding: 1em;
+	gap: 1em;
+}
+/**directory-listV**/
+
+.cards .listV {
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	background-color: gray;
+	text-align: center;
+	font-size: 20px;
+}
+.cards.listV section {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column: 1/5;
+	margin: 0;
+	padding: 0;
+}
+.cards.listV section:nth-child(odd) {
+	background-color: #d9dce8ff;
+}
+.cards.listV img {
+	display: none;
+}
+
+.cards h3 {
+	text-shadow: rgb(145, 215, 228) 1px 5px 10px;
+	text-transform: uppercase;
+}
+
 .temple {
 	grid-column: 1;
 	line-height: 2em;
