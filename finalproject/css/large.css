@@ -1,0 +1,335 @@
+body,
+hr {
+	font-family: "Open Sans", sans-serif;
+	color: #090e20ff;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #f5f5f5;
+	color: black;
+	max-width: 1200px;
+}
+
+p,
+h2,
+button {
+	text-align: center;
+}
+
+/** menu **/
+header {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+.logo1 {
+	grid-row: 1;
+	display: flex;
+	justify-content: center;
+	margin-top: 4em;
+}
+
+nav ul {
+	grid-row: 2;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 2.5em;
+}
+
+#hamburgerBtn span:nth-child(1) {
+	display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+	display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+	display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+	display: block;
+}
+#humbuergerBtn {
+	text-align: right;
+}
+nav button {
+	display: none;
+}
+
+nav ul li a {
+	color: black;
+	display: block;
+	padding: 1em 2vw;
+	font-size: 16px;
+	color: rgb(71, 71, 71);
+	text-decoration: none;
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+	background: rgba(217, 220, 232, 0.3);
+}
+
+#hamburgerBtn span:nth-child(1) {
+	display: none;
+}
+#hamburgerBtn span:nth-child(2) {
+	display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+	display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+	display: none;
+}
+button #humbuergerBtn {
+	display: none;
+}
+
+/*main*/
+main {
+	background-color: #fefffe;
+}
+
+.heroimg {
+	display: flex;
+	justify-content: center;
+}
+
+/**WEATHER**/
+
+.weather {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	width: 94%;
+	margin: 1em auto;
+	padding: 1em;
+	background-color: #f5f5f5;
+	border-radius: 5em 0;
+}
+
+/*Left side (weather)*/
+.weather-name {
+	display: grid;
+}
+.weather-name img {
+	grid-column: 1/2;
+	padding: 0;
+	margin: 0;
+}
+
+.weather-name img .weathericon,
+.date {
+	grid-columns: 1/2;
+	grid-row: 2/3;
+	text-align: center;
+}
+
+/*Right side (weather)*/
+
+.weather-name p {
+	font-size: 20px;
+}
+.weather-name2,
+.weather-name2 p {
+	grid-column: 2/3;
+	text-align: left;
+	font-size: 20px;
+	margin: 20px 20px 10px;
+}
+
+/**PAGE SECTION**/
+
+.page-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	margin: 0 auto;
+	max-width: 720px;
+	padding: 2em;
+	line-height: 2em;
+	background-color: #f5f5f5;
+	border-radius: 5em 0;
+}
+
+.temple-btn,
+.service-btn {
+	margin: 0 auto;
+	display: flex;
+	gap: 1em;
+	margin-top: 1em;
+}
+.service {
+}
+.temple {
+	grid-column: 1;
+	line-height: 2em;
+}
+
+.templepicts {
+	padding: 1.5em;
+}
+.slider {
+	/*横幅94%で左右に余白を持たせて中央寄せ*/
+	width: 94%;
+	margin: 0 auto;
+}
+
+.slider img {
+	width: 60vw; /*スライダー内の画像を60vwにしてレスポンシブ化*/
+	height: auto;
+}
+
+.slider .slick-slide {
+	transform: scale(0.7); /*左右の画像のサイズを80%に*/
+	opacity: 0.5; /*透過50%*/
+}
+
+.slider .slick-slide.slick-center {
+	transform: scale(1); /*中央の画像のサイズだけ等倍に*/
+	opacity: 1; /*透過なし*/
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+	position: absolute; /*絶対配置にする*/
+	top: 42%;
+	cursor: pointer; /*マウスカーソルを指マークに*/
+	outline: none; /*クリックをしたら出てくる枠線を消す*/
+	border-top: 2px solid #666; /*矢印の色*/
+	border-right: 2px solid #666; /*矢印の色*/
+	height: 15px;
+	width: 15px;
+}
+
+.slick-prev {
+	/*戻る矢印の位置と形状*/
+	left: -1.5%;
+	transform: rotate(-135deg);
+}
+
+.slick-next {
+	/*次へ矢印の位置と形状*/
+	right: -1.5%;
+	transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.slick-dots button {
+	color: transparent;
+	outline: none;
+	height: 15px;
+	width: 15px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgb(215, 214, 214); /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+	background: #333; /*ドットボタンの現在地表示の色*/
+}
+
+/**TEMPLE**/
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+#btnCard,
+#btnList {
+	border: none;
+	border-radius: 5px;
+	padding: 0.5em;
+}
+
+/*footer*/
+footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	min-width: 760px;
+	margin: 0;
+	padding: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+#contact {
+	grid-row: 1/3;
+	grid-column: 2/3;
+	margin: 1em 3em;
+	width: 420px;
+	border-radius: 1em;
+	border: none;
+}
+form h3 {
+	font-size: 20px;
+}
+fieldset {
+	border: none;
+}
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #f5f5f5;
+	border-radius: 10px;
+	margin-top: 6px;
+	margin-bottom: 15px;
+	resize: vertical;
+	box-sizing: border-box;
+}
+
+#contact-b {
+	color: #0e3d5a;
+	background-color: #e3e0dd;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	border: transparent;
+	padding: 7px;
+	width: 20%;
+	display: block;
+	margin: 0 0 0 auto;
+	box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#contact-b:hover {
+	color: #262626;
+}
+#contact-b:active {
+	transform: translateY(2px);
+	border-bottom: none;
+}
+.info {
+	grid-row: 1/3;
+	margin: 2.5em auto;
+	padding: 0;
+}
+
+.logo2 {
+	margin-left: 4em;
+	padding: 0;
+}
+.updated {
+	grid-column: 1/3;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	text-align: center;
+}
