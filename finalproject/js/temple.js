@@ -1,5 +1,5 @@
 const requestURL =
-	"https://byui-cit230.github.io/wdd230/finalproject/temple.data/data.json";
+	"https://ribeka-nanjo.github.io/wdd230/finalproject/temple.data/data.json";
 const cards = document.querySelector(".cards");
 
 fetch(requestURL)
@@ -12,18 +12,17 @@ fetch(requestURL)
 		prophets.forEach(displayTemples);
 	});
 
-function displayProphets(temple) {
+function displayTemples(temple) {
 	let card = document.createElement("section");
-	let h2 = document.createElement("h2");
+	let name = document.createElement("h2");
 	let dedication = document.createElement("h3");
 	let rededication = document.createElement("h3");
 	let templeimg = document.createElement("img");
 	let services = document.createElement("p");
 	let add = document.createElement("p");
 	let tel = document.createElement("p");
-	let order = ``;
 
-	h2.innerHTML = `${temple.name}`;
+	name.textContent = `${temple.name}`;
 	dedication.textContent = `DEDICATION:${temple.dedication} `;
 	rededication.textContent = `REDEDICATION:${temple.rededication} `;
 	services.textContent = `SERVICES:${temple.services} `;
