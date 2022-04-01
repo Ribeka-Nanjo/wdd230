@@ -12,13 +12,16 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/small.css" />
 		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
 		<link rel="short cut icon" href="favicon.png" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
 	</head>
 	<body>
 		<header>
@@ -40,6 +43,7 @@
 			</div>
 			<div id="min-banner">
 				<p id="text"></p>
+			</div>
 		</header>
 		<main>
 			<section class="h-container">
@@ -51,57 +55,87 @@
 
 					<img src="img/heroimage-1200.webp" alt="heroimage" />
 				</picture>
-				
+
 				<div class="weather">
-                    <section class="weather-name">
-					<h2>TOKYO, JAPAN</h2>
-                    <div class="date"></div>
-                    <p><img src="" width=100 alt="weathericon" id="weathericon" /></p>
-                    </section>
-                    <section class="weather-name2">
-                     <p>HIGH: <span id="current-temp"></span></p>
-					<p>HUMIDITY: <span id="humidity"></span></p>
-                    <p><span id="weatherdesc"></span></p>
-                </section>
-                </div>
-<div class="page-section">
-				<section class="temple">
-					<h2>TEMPLE</h2>
-					<p>
-						kfaogbnraeogjraeokrpoag<br>
-                        kfaogbnraeogjraeokrpoag<br>
-                        kfaogbnraeogjraeokrpoag
-					</p>
-					<button class="temple-btn">See More</button>
-				</section>
-				<section class="service">
-					<h2>SERVICE</h2>
-					<p>kfaogbnraeogjraeokrpoag<br>
-                    kfaogbnraeogjraeokrpoag<br>
-                    kfaogbnraeogjraeokrpoag
-                    </p>
-					<button class="service-btn">See More</button>
-                </section>
-            </div>
-				<div class="templepicts">
-					<h2>TEMPLE INFO</h2>
-                    <ul class="slider">
-                        <li><img src="img/Tokyo_temple.webp" alt="Tokyo Japan temple">
-                            <button> <a href=""
-                                >Tokyo Temple
-                            </a></button></li>
-                        <li><img src="img/Sapporo_temple.webp" alt="Sapporo Japan temple">
-                            <button> <a href=""
-                                >Sappor Temple
-                            </a></button></li>
-                        <li><img src="img/Provo_city_center_temple.webp" alt="Provo City Center Utah temple">
-                            <button> <a href=""
-                                >Provo City Center Temple
-                            </a></button></li>
-                        <li><img src="img/Kona_Hawaii_temple.webp" alt="Kona Hawaii temple">
-                            <button> <a href=""
-                                >Kona Temple
-                            </a></button></li>
+					<section class="weather-name">
+						<h2>TOKYO, JAPAN</h2>
+						<div class="date"></div>
+						<p>
+							<img
+								src=""
+								width="100"
+								alt="weathericon"
+								id="weathericon"
+							/>
+						</p>
+					</section>
+					<section class="weather-name2">
+						<p>HIGH: <span id="current-temp"></span></p>
+						<p>HUMIDITY: <span id="humidity"></span></p>
+						<p><span id="weatherdesc"></span></p>
+					</section>
+				</div>
+				<div class="page-section">
+					<section class="temple">
+						<h2>TEMPLE</h2>
+						<p>
+							kfaogbnraeogjraeokrpoag<br />
+							kfaogbnraeogjraeokrpoag<br />
+							kfaogbnraeogjraeokrpoag
+						</p>
+						<button
+							type="button"
+							onclick="location.href='temple.html'"
+						>
+							See More
+						</button>
+					</section>
+					<section class="reservation">
+						<h2>Reservation</h2>
+						<p>
+							kfaogbnraeogjraeokrpoag<br />
+							kfaogbnraeogjraeokrpoag<br />
+							kfaogbnraeogjraeokrpoag
+						</p>
+						<button
+							type="button"
+							onclick="location.href='reservation.html'"
+						>
+							Reserve
+						</button>
+					</section>
+				</div>
+				<div class="picts">
+					<ul class="slider">
+						<li>
+							<img
+								src="img/Tokyo_temple.webp"
+								alt="Tokyo Japan temple"
+							/>
+							<h3>Tokyo Temple</h3>
+						</li>
+						<li>
+							<img
+								src="img/Sapporo_temple.webp"
+								alt="Sapporo Japan temple"
+							/>
+							<h3>Sappor Temple</h3>
+						</li>
+						<li>
+							<img
+								src="img/Provo_city_center_temple.webp"
+								alt="Provo City Center Utah temple"
+							/>
+							<h3>Provo City Center Temple</h3>
+						</li>
+						<li>
+							<img
+								src="img/Kona_Hawaii_temple.webp"
+								alt="Kona Hawaii temple"
+							/>
+							<h3>Kona Temple</h3>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>
@@ -193,8 +227,12 @@
 				<div id="lastModified"></div>
 			</div>
 		</footer>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script defer src="js/main.js"></script>
 	</body>
 </html>

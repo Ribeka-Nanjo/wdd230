@@ -90,6 +90,7 @@ button #humbuergerBtn {
 /*main*/
 main {
 	background-color: #fefffe;
+	min-width: 890px;
 }
 
 .heroimg {
@@ -99,20 +100,10 @@ main {
 
 /**WEATHER**/
 
-.weather {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	width: 94%;
-	margin: 1em auto;
-	padding: 1em;
-	background-color: #f5f5f5;
-	border-radius: 5em 0;
-}
-
 /*Left side (weather)*/
-.weather-name {
+.weather{
 	display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .weather-name img {
 	grid-column: 1/2;
@@ -135,35 +126,45 @@ main {
 .weather-name2,
 .weather-name2 p {
 	grid-column: 2/3;
-	text-align: left;
 	font-size: 20px;
-	margin: 20px 20px 10px;
+	margin: 1em 0 0 1.5em;
+    text-align: left;
+    
 }
 
 /**PAGE SECTION**/
 
-.page-section {
+.weather, .page-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-	margin: 0 auto;
-	max-width: 720px;
-	padding: 2em;
+	margin: 2em auto;
+	max-width: 820px;
+	padding: 1em;
 	line-height: 2em;
 	background-color: #f5f5f5;
 	border-radius: 5em 0;
 }
 
-.temple-btn,
-.service-btn {
+.temple button,
+.reservation button {
 	margin: 0 auto;
 	display: flex;
-	gap: 1em;
-	margin-top: 1em;
+    justify-content: center;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #0e3d5a;
+    color: #0e3d5a;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.29);
 }
-.temple-btn:active,
-.service-btn:active {
-	background-color: #333;
+}
+.temple button:active,
+.service button:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
 }
 
 .temple {
@@ -171,8 +172,9 @@ main {
 	line-height: 2em;
 }
 
-.templepicts {
+.picts {
 	padding: 1.5em;
+    margin-top: 1em;
 }
 .slider {
 	/*横幅94%で左右に余白を持たせて中央寄せ*/
@@ -193,6 +195,17 @@ main {
 .slider .slick-slide.slick-center {
 	transform: scale(1); /*中央の画像のサイズだけ等倍に*/
 	opacity: 1; /*透過なし*/
+}
+.slider h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	background-color: #0e3d5a;
+	color: #f5f5f5;
+	height: 60px;
+	text-align: center;
+    margin: 0;
 }
 
 /*矢印の設定*/
@@ -322,6 +335,42 @@ main .btn-primary {
 }
 .cards.listV img {
 	display: none;
+}
+
+/**RESERVATION**/
+.r-container {
+	padding: 2em;
+	margin: 0 auto;
+	max-width: 740px;
+}
+
+.r-container h2 {
+	background-color: #0e3d5a;
+	padding: 1em;
+	color: #fefefe;
+}
+
+.r-container form {
+	display: block;
+	background-color: #fefffe;
+	padding: 1em;
+	margin: 2% auto;
+	box-shadow: 0px 0px 20px rgb(124 124 124);
+}
+.r-container input {
+	width: 30%;
+    margin-left: 1em;
+}
+.reservation-con{
+    margin-left: 1.5em;
+    font-weight: 600;
+}
+.reservation-con select{
+    margin: 1em;
+}
+
+.r-container sup{
+    color: red;
 }
 
 /*footer*/

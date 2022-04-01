@@ -7,18 +7,21 @@
 			name="discription"
 			content="this is the temple page describes the details for at least four temples"
 		/>
-		<title>Temple Inn & Suites- temple page</title>
+		<title>Welcome to reservation page</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/small.css" />
 		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
 		<link rel="short cut icon" href="favicon.png" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
 	</head>
 	<body>
 		<header>
@@ -40,19 +43,66 @@
 			</div>
 			<div id="min-banner">
 				<p id="text"></p>
+			</div>
 		</header>
 		<main>
-            <main>
-                <div class="btn-primary">
-                    <button id="btnCard" onclick="cardView();">
-                        <img src="directory-img/icon.cardview.png" alt="cardview" />
-                    </button>
-                    <button id="btnList" onclick="listView();">
-                        <img src="directory-img/icon.listview.png" alt="listview" />
-                    </button>
-                </div>
-                <div class="cards"></div>
-            </main>
+			<section class="r-container">
+				<h2>Reservation</h2>
+				<form
+					action="target"
+					method="get"
+					enctype="multipart/form-data"
+				>
+					<fieldset>
+						<h4>Personal Information</h4>
+						<input
+							placeholder="First Name"
+							type="text"
+							tabindex="1"
+							pattern="[A-Z][a-z]+\s[A-Z][a-z]+"
+							required
+						/><sup>*</sup>
+						<input
+							placeholder="Last Name"
+							type="text"
+							tabindex="2"
+							pattern="[A-Z][a-z]+\s[A-Z][a-z]+"
+							required
+						/><sup>*</sup> <br /><br />
+						<input
+							id="number"
+							class="form-element-field"
+							placeholder="Please fill in your phone number"
+							type="tel"
+							required
+						/><sup>*</sup>
+						<input
+							placeholder="Email Address"
+							type="email"
+							tabindex="3"
+							name="email"
+						/><br /><br />
+					</fieldset>
+					<div class="reservation-con">
+						<label>Type of Stay</label>
+						<select name="room">
+							<option value="Single">
+								Single room - 1 single bed
+							</option>
+							<option value="Double">
+								Double room - 2 double beds
+							</option>
+							<option value="King">King room - 1 king bed</option>
+						</select>
+						<br /><br />
+						<label class="schedule" for="date">CHECK-IN</label>
+						<input id="date" type="date" name="check-In" />
+						<label class="schedule" for="date">CHECK-OUT</label>
+						<input id="date2" type="date" name="check-Out" />
+						<button class="submit" type="submit">SUBMIT</button>
+					</div>
+				</form>
+			</section>
 		</main>
 		<hr />
 		<footer>
@@ -142,7 +192,12 @@
 				<div id="lastModified"></div>
 			</div>
 		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script defer src="js/main.js"></script>
-        <script defer src=""></script>
 	</body>
 </html>
