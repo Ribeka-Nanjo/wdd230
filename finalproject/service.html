@@ -5,20 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="discription"
-			content="this is the temple page describes the details for at least four temples"
+			content="this is the service page that provides the information on amenities and services that the hotel offers"
 		/>
-		<title>Temple Inn & Suites- temple page</title>
+		<title>Welcome to service page</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/small.css" />
-		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/small.css" />
 		<link rel="short cut icon" href="favicon.png" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
 	</head>
 	<body>
 		<header>
@@ -40,41 +43,156 @@
 			</div>
 			<div id="min-banner">
 				<p id="text"></p>
+			</div>
 		</header>
 		<main>
-            <main>
-                <div class="btn-primary">
-                    <button id="btnCard" onclick="cardView();">
-                        <img src="directory-img/icon.cardview.png" alt="cardview" />
-                    </button>
-                    <button id="btnList" onclick="listView();">
-                        <img src="directory-img/icon.listview.png" alt="listview" />
-                    </button>
-                </div>
-                <div class="cards"></div>
-            </main>
+			<img class="toppic" src="img/service.jpg" alt="hotel lobby" />
+			<div class="s-container1">
+				<h1>SPECIAL OFFER</h1>
+				<p>
+					We would love to provide comfortable and peaceful experience
+					at the Temple Inn and Suites.
+				</p>
+				<ul class="offers">
+					<li>
+						Free access to changing rooms and bathroom facilities
+					</li>
+					<li>
+						A playroom and low-cost, short-term babysitting services
+					</li>
+					<li>
+						Long-term stay accommodations in kitchenette suites for
+						full-time temple missionaries
+					</li>
+					<li>Temple history themed reception and sitting area</li>
+				</ul>
+			</div>
+			<div class="s-container">
+				<h2>Free Amenities</h2>
+				<div class="up">
+					<section class="workout">
+						<img
+							class="sIcon"
+							src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/64/000000/external-workout-hobbies-and-free-time-xnimrodx-lineal-xnimrodx.png"
+							alt="workout"
+						/>
+						<h4>Gym room Service</h4>
+					</section>
+					<section class="breakfast">
+						<img
+							class="sIcon"
+							src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/64/000000/external-breakfast-resort-xnimrodx-lineal-xnimrodx.png"
+							alt="breakfast"
+						/>
+						<h4>Free Breakfast</h4>
+					</section>
+					<section class="insidepool">
+						<img
+							class="sIcon"
+							src="https://img.icons8.com/pastel-glyph/64/000000/swimming-pool.png"
+							alt="insidepool"
+						/>
+						<h4>Inside pool</h4>
+					</section>
+					<section class="wifi">
+						<img
+							class="sIcon"
+							src="https://img.icons8.com/windows/64/000000/wifi--v1.png"
+							alt="wifi"
+						/>
+						<h4>Free Wifi</h4>
+					</section>
+				</div>
+				<div class="down">
+					<section class="shuttle">
+						<img
+							class="sIcon"
+							src="https://img.icons8.com/windows/64/000000/bus.png"
+							alt="shuttle bus"
+						/>
+						<h4>Shuttle Service</h4>
+						<p>
+							The hotel offers a free shuttle bus to/from near an
+							airport and a temple.
+						</p>
+					</section>
+					<section class="parking">
+						<img
+							class="sIcon"
+							src="https://img.icons8.com/pastel-glyph/64/000000/parking--v4.png"
+							alt="parking"
+						/>
+						<h4>Parking service</h4>
+						<p>
+							This is the parking for guests staying at the hotel
+							or going to the temples. Weekday parking lot
+							charge-free service!
+						</p>
+					</section>
+					<section class="familyhistory">
+						<img
+							class="sIcon"
+							src="https://img.icons8.com/windows/64/000000/deciduous-tree.png"
+							alt="family history"
+						/>
+						<h4>Family history consultation</h4>
+						<p>
+							We provide family ordinance card service. Use these
+							free resources to research and build your family
+							tree
+						</p>
+					</section>
+				</div>
+			</div>
+			<div class="s-container2">
+				<section class="extraP">
+					<h2>Wedding reception</h2>
+					<button
+						type="button"
+						onclick="location.href='wedding.html'"
+					>
+						See More
+					</button>
+				</section>
+				<section class="extraP">
+					<h2>A full-time temple missionary</h2>
+					<button
+						type="button"
+						onclick="location.href='tmissionary.html'"
+					>
+						See More
+					</button>
+				</section>
+			</div>
 		</main>
 		<hr />
 		<footer>
 			<div class="info">
 				<a href="index.html" title="Home"
-					><img
-						class="logo2"
-						src="img/logo1.png"
-						width="350"
-						alt="footer logo"
-				/></a>
+					><p>
+						<img
+							src="img/logo1.png"
+							width="350"
+							alt="footer logo"
+						/></p
+				></a>
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285327!2d-77.09772048463415!3d38.983255949483734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2zNDgwMCBNb250Z29tZXJ5IExuICMzMDAsIEJldGhlc2RhLCBNRCAyMDgxNCDjgqLjg6Hjg6rjgqvlkIjooYblm70!5e0!3m2!1sja!2sjp!4v1648279221582!5m2!1sja!2sjp"
-					width="550"
-					height="250"
+					width="650"
+					height="450"
 					style="border: 0"
 					allowfullscreen=""
 					loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"
 				></iframe>
-				<p>4800 Montgomery Ln #300,<br />Bethesda, MD 20814</p>
-				<p>
+				<div class="infop">
+					<p>
+						&#9654; 4800 Montgomery Ln #300,Bethesda, MD 20814
+						<br />
+					</p>
+					<p>&#9654; 123-222-334</p>
+				</div>
+				<div class="icon">
 					<a href="https://facebook.com"
 						><img
 							src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
@@ -87,53 +205,14 @@
 							width="40"
 							alt="instagram icon"
 					/></a>
-				</p>
+					<a href="mailto:user@dammy.com"
+						><img
+							src="https://img.icons8.com/material/48/000000/new-post--v1.png"
+							width="43"
+							alt="email icon"
+					/></a>
+				</div>
 			</div>
-			<form id="contact" method="post">
-				<h3>Contact form</h3>
-				<fieldset>
-					<input
-						placeholder="Name"
-						type="text"
-						tabindex="1"
-						required
-					/>
-				</fieldset>
-				<fieldset>
-					<input
-						placeholder="Phone Number"
-						type="tel"
-						tabindex="2"
-						required
-					/>
-				</fieldset>
-				<fieldset>
-					<input
-						placeholder="Email Address"
-						type="email"
-						tabindex="3"
-						required
-					/>
-				</fieldset>
-				<fieldset>
-					<textarea
-						placeholder="Type your message here...."
-						tabindex="4"
-						style="height: 200px"
-						required
-					></textarea>
-				</fieldset>
-				<fieldset>
-					<button
-						id="contact-b"
-						name="submit"
-						type="submit"
-						data-submit="...Sending"
-					>
-						Submit
-					</button>
-				</fieldset>
-			</form>
 			<div class="updated">
 				<hr />
 				<br />
@@ -141,8 +220,14 @@
 				Project |<br />
 				<div id="lastModified"></div>
 			</div>
+			>
 		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script defer src="js/main.js"></script>
-        <script defer src=""></script>
 	</body>
 </html>
