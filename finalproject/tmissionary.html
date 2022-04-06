@@ -5,9 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="discription"
-			content="this is the website of a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world."
+			content="this is the temple page describes the details for at least four temples"
 		/>
-		<title>The Temple Inn & Suites</title>
+		<title>Welcome to a future temple missionary page</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
@@ -38,7 +38,7 @@
 			</nav>
 			<div class="logo1">
 				<a href="index.html" title="Home">
-					<img src="img/logo1.png" width="400" alt="header logo" />
+					<img src="img/logo1.png" width="300" alt="header logo" />
 				</a>
 			</div>
 			<div id="min-banner">
@@ -46,96 +46,108 @@
 			</div>
 		</header>
 		<main>
-			<section class="h-container">
-				<picture class="heroimg">
-					<source
-						media="(max-width: 480px)"
-						srcset="img/heroimage-480.webp"
-					/>
-
-					<img src="img/heroimage-1200.webp" alt="heroimage" />
-				</picture>
-
-				<div class="weather">
-					<section class="weather-name">
-						<h2>TOKYO, JAPAN</h2>
-						<div class="date"></div>
-						<p>
-							<img
-								src=""
-								width="100"
-								alt="weathericon"
-								id="weathericon"
-							/>
-						</p>
-					</section>
-					<div class="weather-name2">
-						<p>HIGH: <span id="current-temp"></span></p>
-						<p>HUMIDITY: <span id="humidity"></span></p>
-						<p><span id="weatherdesc"></span></p>
-					</div>
+			<div class="missionaryRoomimg">
+				<img src="img/hotelroom1.webp" alt="room type1" />
+				<img src="img/hotelroom2.webp" alt="room type2" />
+				<img src="img/hotelroom3.webp" alt="room type 3" />
+			</div>
+			<div class="tmissionary-container">
+				<section class="t-block">
+					<h1>A full-time Temple missionary</h1>
+					<p>
+						We would like to provide a loving experience to support
+						temple missionaries with a special room.
+					</p>
+					<h3>Feel free to contact us!</h3>
+					<br />
+				</section>
+			</div>
+			<section class="t-block1">
+				<div class="room">
+					<h1>King Studio Suite</h1>
+					<ul>
+						<li>Room size 28 m²</li>
+						<li>Comfy beds, 8.8</li>
+						<li>
+							This suite has a sofa, seating area and dishwasher.
+						</li>
+					</ul>
+					<h3>kitchenette</h3>
+					<ul>
+						<li>Dishwasher</li>
+						<li>Dining table</li>
+						<li>Cleaning products</li>
+					</ul>
 				</div>
-				<div class="page-section">
-					<section class="temple">
-						<h2>TEMPLE</h2>
-						<p>
-							Everything taught in the temple, through
-							instruction<br />
-							and through the Spirit, increases our
-							understanding<br />
-							of Jesus Christ. -President Russell M. Nelson
-						</p>
-						<button
-							type="button"
-							onclick="location.href='temple.html'"
-						>
-							See More
-						</button>
-					</section>
-					<section class="reservation">
-						<h2>Reservation</h2>
-						<p>Now is the time to book your hotel!</p>
-						<button
-							type="button"
-							onclick="location.href='reservation.html'"
-						>
-							BOOK NOW
-						</button>
-					</section>
-				</div>
-				<div class="picts">
-					<ul class="slider">
+				<div class="room">
+					<h1>Queen Suite with Two Queen Beds</h1>
+					<ul>
+						<li>Room size 30 m²</li>
+						<li>Comfy beds, 8.8</li>
 						<li>
-							<img
-								src="img/Tokyo_temple.webp"
-								alt="Tokyo Japan temple"
-							/>
-							<h3>Tokyo Temple</h3>
+							This suite has a sofa, seating area and dishwasher.
 						</li>
-						<li>
-							<img
-								src="img/Sapporo_temple.webp"
-								alt="Sapporo Japan temple"
-							/>
-							<h3>Sappor Temple</h3>
-						</li>
-						<li>
-							<img
-								src="img/Provo_city_center_temple.webp"
-								alt="Provo City Center Utah temple"
-							/>
-							<h3>Provo City Center Temple</h3>
-						</li>
-						<li>
-							<img
-								src="img/Kona_Hawaii_temple.webp"
-								alt="Kona Hawaii temple"
-							/>
-							<h3>Kona Temple</h3>
-						</li>
+					</ul>
+
+					<h3>kitchenette</h3>
+					<ul>
+						<li>Dishwasher</li>
+						<li>Dining table</li>
+						<li>Cleaning products</li>
 					</ul>
 				</div>
 			</section>
+			<div class="form">
+				<p>
+					If you have any questions, or would like to know about each
+					price, please reach out to us.
+				</p>
+				<form id="contact" method="post">
+					<h2>Contact form</h2>
+					<fieldset>
+						<input
+							placeholder="Name"
+							type="text"
+							tabindex="1"
+							required
+						/>
+					</fieldset>
+					<fieldset>
+						<input
+							placeholder="Phone Number"
+							type="tel"
+							tabindex="2"
+							required
+						/>
+					</fieldset>
+					<fieldset>
+						<input
+							placeholder="Email Address"
+							type="email"
+							tabindex="3"
+							required
+						/>
+					</fieldset>
+					<fieldset>
+						<textarea
+							placeholder="Type your message here...."
+							tabindex="4"
+							style="height: 200px"
+							required
+						></textarea>
+					</fieldset>
+					<fieldset>
+						<button
+							id="contact-b"
+							name="submit"
+							type="submit"
+							data-submit="...Sending"
+						>
+							Submit
+						</button>
+					</fieldset>
+				</form>
+			</div>
 		</main>
 		<hr />
 		<footer>

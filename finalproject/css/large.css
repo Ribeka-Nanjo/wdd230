@@ -6,11 +6,15 @@ hr {
 	margin: 0 auto;
 	background-color: #f5f5f5;
 	color: black;
-	max-width: 1200px;
+	min-width: 1200px;
+	-webkit-text-size-adjust: 100%;
 }
 
 p,
+h1,
 h2,
+h3,
+h4,
 button {
 	text-align: center;
 }
@@ -90,7 +94,6 @@ button #humbuergerBtn {
 /*main*/
 main {
 	background-color: #fefffe;
-	min-width: 890px;
 }
 
 .heroimg {
@@ -101,9 +104,9 @@ main {
 /**WEATHER**/
 
 /*Left side (weather)*/
-.weather{
+.weather {
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+	grid-template-column: 1fr 1fr;
 }
 .weather-name img {
 	grid-column: 1/2;
@@ -128,13 +131,13 @@ main {
 	grid-column: 2/3;
 	font-size: 20px;
 	margin: 1em 0 0 1.5em;
-    text-align: left;
-    
+	text-align: left;
 }
 
 /**PAGE SECTION**/
 
-.weather, .page-section {
+.weather,
+.page-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
@@ -146,25 +149,25 @@ main {
 	border-radius: 5em 0;
 }
 
+.extraP button,
 .temple button,
 .reservation button {
 	margin: 0 auto;
 	display: flex;
-    justify-content: center;
-    padding: 0.5em 1em;
-    margin-top: 1em;
-    text-decoration: none;
-    background: #f7f7f7;
-    border-left: solid 6px #0e3d5a;
-    color: #0e3d5a;
-    font-weight: bold;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.29);
-}
+	justify-content: center;
+	padding: 0.5em 1em;
+	margin-top: 1em;
+	text-decoration: none;
+	background: #f7f7f7;
+	border-left: solid 6px #0e3d5a;
+	color: #0e3d5a;
+	font-weight: bold;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.29);
 }
 .temple button:active,
 .service button:active {
-    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
-    transform: translateY(2px);
+	box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+	transform: translateY(2px);
 }
 
 .temple {
@@ -174,7 +177,7 @@ main {
 
 .picts {
 	padding: 1.5em;
-    margin-top: 1em;
+	margin-top: 1em;
 }
 .slider {
 	/*横幅94%で左右に余白を持たせて中央寄せ*/
@@ -204,8 +207,7 @@ main {
 	background-color: #0e3d5a;
 	color: #f5f5f5;
 	height: 60px;
-	text-align: center;
-    margin: 0;
+	margin: 0;
 }
 
 /*矢印の設定*/
@@ -238,12 +240,13 @@ main {
 /*ドットナビゲーションの設定*/
 
 .slick-dots {
+	display: none;
 	text-align: center;
 	margin: 10px 0 0 0;
 }
 
 .slick-dots li {
-	display: inline-block;
+	display: none;
 	margin: 0 10px;
 }
 
@@ -279,12 +282,18 @@ main {
 	border-radius: 5px;
 	padding: 0.5em;
 }
+
+.cards section {
+	box-shadow: 5px 5px 10px #777;
+}
 .cards img {
 	width: 100%;
 }
 
-.cards p {
+.cards p,
+.cards h4 {
 	text-align: left;
+	padding: 0 4em 0 4em;
 }
 .cards h2 {
 	grid-column: 1;
@@ -293,6 +302,7 @@ main {
 	text-transform: uppercase;
 	text-align: left;
 	margin: 1em auto;
+	padding: 1em;
 }
 .cards h4 {
 	text-shadow: rgb(153, 219, 219) 3px 3px 10px;
@@ -329,6 +339,7 @@ main .btn-primary {
 	grid-column: 1/5;
 	margin: 0;
 	padding: 0;
+	align-items: center;
 }
 .cards.listV section:nth-child(odd) {
 	background-color: #d9dce8ff;
@@ -359,58 +370,166 @@ main .btn-primary {
 }
 .r-container input {
 	width: 30%;
-    margin-left: 1em;
+	margin-left: 1em;
 }
-.reservation-con{
-    margin-left: 1.5em;
-    font-weight: 600;
-}
-.reservation-con select{
-    margin: 1em;
-}
-
-.r-container sup{
-    color: red;
-}
-
-/*footer*/
-footer {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	min-width: 760px;
-	margin: 0;
-	padding: 0;
-	padding: 0;
-	font-size: 18px;
+.reservation-con {
+	margin-left: 1.5em;
 	font-weight: 600;
 }
+.reservation-con select {
+	margin: 1em;
+}
+
+.r-container sup {
+	color: red;
+}
+
+/** SERVICE **/
+
+/*main ul,
+section ul {
+	list-style-type: disclosure-closed;
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+}
+*/
+.offers {
+	list-style-type: disclosure-closed;
+	display: inline-block;
+	text-align: left;
+	margin: 0;
+}
+.s-container1 {
+	text-align: center;
+}
+.s-container {
+	margin: 3em auto;
+	padding: 1em;
+	background-color: #0e3d5a;
+	opacity: 1;
+	color: #fefefe;
+}
+
+.toppic {
+	width: 1200px;
+	height: 600px;
+	object-fit: cover;
+	margin: 0 auto;
+	display: flex;
+}
+.up,
+.down {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	padding: 1em;
+	margin: 0 auto;
+}
+
+.up {
+	max-width: 670px;
+}
+.down {
+	max-width: 930px;
+	gap: 10px;
+}
+
+.shuttle,
+.parking,
+.familyhistory {
+	width: 100%;
+}
+
+.s-container .sIcon {
+	width: 50px;
+	height: 50px;
+	padding: 0.5em;
+	border-radius: 20%;
+	background: #ededed;
+}
+
+/* Extra page*/
+.s-container2 {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0em 20em 5em;
+	flex-wrap: wrap;
+}
+
+/** WEDDING RECEPTION **/
+
+.w-container {
+	padding: 1em;
+}
+
+.weddingimg,
+.missionaryRoomimg {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.weddingimg img,
+.missionaryRoomimg img {
+	width: 100%;
+}
+/*TEMPLE MISSIONARY*/
+.tmissionary-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.t-block1 {
+	grid-row: 1;
+	display: flex;
+	margin: 0 auto;
+}
+.t-block1,
+.t-block1 h1,
+.t-block1 h3 {
+	grid-row: 2;
+	text-align: left;
+}
+.room {
+	border-radius: 14px;
+	width: 300px;
+	height: 300px;
+	padding: 2em;
+	margin: 4em;
+	background-color: #f5f5f5;
+	box-shadow: 8px 9px 7px rgb(0 0 0 / 16%);
+}
+
+.room ul li {
+	list-style: square inside none;
+	text-align: left;
+}
+
+.form {
+	grid-row: 3;
+	background-color: #0e3d5a;
+	color: #fefefe;
+	font-size: 20px;
+}
 #contact {
-	grid-row: 1/3;
-	grid-column: 2/3;
-	margin: 1em 3em;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-row: 1;
+	grid-column: 1;
+	margin: 20px auto;
 	width: 420px;
 	border-radius: 1em;
 	border: none;
 }
-form h3 {
+#contact p {
+	margin: 0;
 	font-size: 20px;
 }
-fieldset {
-	border: none;
-}
-input,
-textarea {
-	width: 100%;
-	padding: 10px;
-	border: 1px solid #f5f5f5;
-	border-radius: 10px;
-	margin-top: 6px;
-	margin-bottom: 15px;
-	resize: vertical;
-	box-sizing: border-box;
-}
-
 #contact-b {
 	color: #0e3d5a;
 	background-color: #e3e0dd;
@@ -431,15 +550,48 @@ textarea {
 	transform: translateY(2px);
 	border-bottom: none;
 }
+
+/*footer*/
+footer {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+form h3 {
+	font-size: 20px;
+}
+fieldset {
+	border: none;
+}
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #f5f5f5;
+	border-radius: 10px;
+	margin-top: 6px;
+	margin-bottom: 15px;
+	resize: vertical;
+	box-sizing: border-box;
+}
+
 .info {
 	grid-row: 1/3;
 	margin: 2.5em auto;
 	padding: 0;
+	display: grid;
+	text-align: center;
 }
-
+section .infop p {
+	margin: 0;
+	text-align: left;
+}
+.icon img {
+	margin: 1em;
+}
 .logo2 {
-	margin-left: 4em;
-	padding: 0;
+	text-align: center;
+	display: flex;
 }
 .updated {
 	grid-column: 1/3;

@@ -7,18 +7,22 @@
 			name="discription"
 			content="this is the temple page describes the details for at least four temples"
 		/>
-		<title>Temple Inn & Suites- temple page</title>
+		<title>Welcome to the temple information page</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
 
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/small.css" />
-		<link rel="stylesheet" href="css/medium.css" />
 		<link rel="stylesheet" href="css/large.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/small.css" />
 		<link rel="short cut icon" href="favicon.png" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
 	</head>
 	<body>
 		<header>
@@ -40,30 +44,40 @@
 			</div>
 			<div id="min-banner">
 				<p id="text"></p>
+			</div>
 		</header>
 		<main>
-            <div class="t-container">
-               <div class="btn-primary">
-                    <button id="btnCard" onclick="cardView();">
-                        <img src="img/icons8-thumbnails-100.png" width="30" alt="cardview" />
-                    </button>
-                    <button id="btnList" onclick="listView();">
-                        <img src="img/icons8-list-96.png" width="30" alt="listview" />
-                    </button>
-                </div>
-                <div class="cards"></div>
-            </div>
+			<div class="t-container">
+				<div class="btn-primary">
+					<button id="btnCard" onclick="cardView();">
+						<img
+							src="img/icons8-thumbnails-100.png"
+							width="30"
+							alt="cardview"
+						/>
+					</button>
+					<button id="btnList" onclick="listView();">
+						<img
+							src="img/icons8-list-96.png"
+							width="30"
+							alt="listview"
+						/>
+					</button>
+				</div>
+				<div class="cards"></div>
+			</div>
 		</main>
 		<hr />
 		<footer>
 			<div class="info">
 				<a href="index.html" title="Home"
-					><img
-						class="logo2"
-						src="img/logo1.png"
-						width="350"
-						alt="footer logo"
-				/></a>
+					><p>
+						<img
+							src="img/logo1.png"
+							width="350"
+							alt="footer logo"
+						/></p
+				></a>
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285327!2d-77.09772048463415!3d38.983255949483734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2zNDgwMCBNb250Z29tZXJ5IExuICMzMDAsIEJldGhlc2RhLCBNRCAyMDgxNCDjgqLjg6Hjg6rjgqvlkIjooYblm70!5e0!3m2!1sja!2sjp!4v1648279221582!5m2!1sja!2sjp"
 					width="550"
@@ -73,67 +87,31 @@
 					loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"
 				></iframe>
-				<p>4800 Montgomery Ln #300,<br />Bethesda, MD 20814</p>
-				<p>
-					<a href="https://facebook.com"
-						><img
-							src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
-							width="40"
-							alt="facebook icon"
-					/></a>
-					<a href="https://www.instagram.com/"
-						><img
-							src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png"
-							width="40"
-							alt="instagram icon"
-					/></a>
-				</p>
+				<p>&#9654; 4800 Montgomery Ln #300,<br />Bethesda, MD 20814</p>
+				<p>&#9654; 123-222-334</p>
+				<div class="icon">
+					<p>
+						<a href="https://facebook.com"
+							><img
+								src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+								width="40"
+								alt="facebook icon"
+						/></a>
+						<a href="https://www.instagram.com/"
+							><img
+								src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png"
+								width="40"
+								alt="instagram icon"
+						/></a>
+						<a href="mailto:user@dammy.com"
+							><img
+								src="https://img.icons8.com/material/48/000000/new-post--v1.png"
+								width="43"
+								alt="email icon"
+						/></a>
+					</p>
+				</div>
 			</div>
-			<form id="contact" method="post">
-				<h3>Contact form</h3>
-				<fieldset>
-					<input
-						placeholder="Name"
-						type="text"
-						tabindex="1"
-						required
-					/>
-				</fieldset>
-				<fieldset>
-					<input
-						placeholder="Phone Number"
-						type="tel"
-						tabindex="2"
-						required
-					/>
-				</fieldset>
-				<fieldset>
-					<input
-						placeholder="Email Address"
-						type="email"
-						tabindex="3"
-						required
-					/>
-				</fieldset>
-				<fieldset>
-					<textarea
-						placeholder="Type your message here...."
-						tabindex="4"
-						style="height: 200px"
-						required
-					></textarea>
-				</fieldset>
-				<fieldset>
-					<button
-						id="contact-b"
-						name="submit"
-						type="submit"
-						data-submit="...Sending"
-					>
-						Submit
-					</button>
-				</fieldset>
-			</form>
 			<div class="updated">
 				<hr />
 				<br />
@@ -142,7 +120,13 @@
 				<div id="lastModified"></div>
 			</div>
 		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script defer src="js/main.js"></script>
-        <script defer src="js/temple.js"></script>
+		<script defer src="js/temple.js"></script>
 	</body>
 </html>
