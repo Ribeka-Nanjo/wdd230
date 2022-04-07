@@ -151,7 +151,8 @@ main {
 
 .extraP button,
 .temple button,
-.reservation button {
+.reservation button,
+.t-block1 button {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -485,15 +486,14 @@ section ul {
 }
 
 .t-block1 {
-	grid-row: 1;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	margin: 0 auto;
+	padding: 0 0 5em 0;
 }
 .t-block1,
 .t-block1 h1,
 .t-block1 h3 {
-	grid-row: 2;
 	text-align: left;
 }
 .room {
