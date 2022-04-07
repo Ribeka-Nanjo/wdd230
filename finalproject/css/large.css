@@ -454,7 +454,7 @@ section ul {
 /* Extra page*/
 .s-container2 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	margin: 0 auto;
 	padding: 0em 20em 5em;
 	flex-wrap: wrap;
@@ -487,6 +487,7 @@ section ul {
 .t-block1 {
 	grid-row: 1;
 	display: flex;
+	justify-content: space-evenly;
 	margin: 0 auto;
 }
 .t-block1,
@@ -515,6 +516,7 @@ section ul {
 	background-color: #0e3d5a;
 	color: #fefefe;
 	font-size: 20px;
+	padding: 1em;
 }
 #contact {
 	display: grid;
